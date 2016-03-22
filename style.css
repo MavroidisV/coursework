@@ -15,6 +15,7 @@ table { margin-left: auto;
     width: 400px;
     background-color: #fff;
     text-align: center;
+    margin:0 auto;
 }
 
 .input-text
