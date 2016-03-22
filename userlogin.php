@@ -11,13 +11,13 @@
 <div class="loginBox">
     <h3>Login Form</h3>
     <br><br>
-    <style>   </style>
-    <form method="post" action="loginvalidation.php" class="box-form">
-        <label>Username:</label><br>
+    <form method="post" action="loginvalidation.php" class="box-form" autocomplete="on">
+        <label for = "username">Username:</label><br>
         <input type="text" name="username" placeholder="username" class="input-text"/><br><br>
-        <label>Password:</label><br>
+        <label for="password">Password:</label><br>
         <input type="password" name="password" placeholder="password" class="input-text" />  <br><br>
         <input type="submit" name="submit" value = "login" class="input-text"/>
+        Not already a user? Please register <a href  = "register.html"> here </a>
     </form>
     <div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
 
