@@ -4,9 +4,10 @@
     <title>Welcome</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
-<?php echo $_POST["username"]?>
+
 <body>
 <h1>Hello</h1>
+<?php echo $_POST["username"];?>
 </body>
 </html>
  
