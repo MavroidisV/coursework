@@ -13,10 +13,10 @@
     <br><br>
     <form method="post" action="loginvalidation.php">
         <label>Username:</label><br>
-        <input type="text" name="username" placeholder="username" /><br><br>
+        <input type="text" name="username" placeholder="username" class="input-text"/><br><br>
         <label>Password:</label><br>
-        <input type="password" name="password" placeholder="password" />  <br><br>
-        <input type="submit" name="submit" value = "login"/>
+        <input type="password" name="password" placeholder="password" class="input-text" />  <br><br>
+        <input type="submit" name="submit" value = "login" class="input-text"/>
     </form>
     <div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
 
