@@ -11,7 +11,7 @@
 <div class="loginBox">
     <h3>Login Form</h3>
     <br><br>
-    <form method="post" action="loginvalidation.php">
+    <form method="post" action="loginvalidation.php" class="box-table">
         <label>Username:</label><br>
         <input type="text" name="username" placeholder="username" class="input-text"/><br><br>
         <label>Password:</label><br>
