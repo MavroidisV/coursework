@@ -7,7 +7,7 @@
 
 <body>
 <h1>Hello</h1>
-<?php echo "Hello" .$_SESSION['username']?>
+<?php echo "Hello" .$_POST['username']?>
 </body>
 </html>
  
