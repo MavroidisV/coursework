@@ -7,7 +7,7 @@
 
 <body>
 <h1>Hello</h1>
-<?php echo $_POST["username"];?>
+<?php echo $result;?>
 </body>
 </html>
  
