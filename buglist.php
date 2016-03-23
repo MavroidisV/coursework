@@ -3,6 +3,7 @@
 
 <?php
 include("connection.php");
+include ("mybugs.php");
 
 //select everything from our bugs table
 $sql="SELECT * FROM bugs";

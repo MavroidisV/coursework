@@ -1,5 +1,7 @@
 <body>
 <?php
+
+
     include("connection.php");
 //select everything from our bugs table where the id is right
 $sql="select * from bugs where bugID= ".$_GET["bugID"];
