@@ -28,7 +28,8 @@ else {
     //Otherwise echo error.
 if(mysqli_num_rows($result) == 1)
 {
-    $_SESSION['username'] = $username; // Initializing Session
+    $_SESSION['username'] = $username;
+    $_SESSION['userID'] = $userID;// Initializing Session
     header("location: home.php"); // Redirecting To another Page
 }else
 {
