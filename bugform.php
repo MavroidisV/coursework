@@ -5,6 +5,7 @@ include("bugsubmit.php");
 include("check.php");
 
 ?>
+<?php echo $id_check;?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
