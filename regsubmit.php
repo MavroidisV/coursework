@@ -32,6 +32,7 @@ if(isset($_POST["submit"]))
         if($query)
         {
             echo "Thank You! you are now registered.";
+            header("location: home.php");
         }
 
     }

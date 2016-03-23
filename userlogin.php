@@ -16,9 +16,8 @@ if ((isset($_SESSION['username']) != ''))
 </head>
 
 <body>
-<h1>PHP Login Form with Session</h1>
+<h1>Login</h1>
 
-    <h3>Login Form</h3>
     <br><br>
     <form method="post" action="loginvalidation.php" class="box-form" autocomplete="on">
         <label for = "username">Username:</label><br>
