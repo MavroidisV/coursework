@@ -19,5 +19,7 @@ echo "<h2>".$bugTitle." </h2>";
 echo "<p>".$bugDesc."</p>"
 
 
+
+
 ?>
 </body>
