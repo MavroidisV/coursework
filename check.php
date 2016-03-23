@@ -11,6 +11,6 @@ $login_user=$row['username'];
 
 if(!isset($user_check))
 {
-header("Location: Register.html");
+header("Location: register.php");
 }
 ?>
