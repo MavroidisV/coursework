@@ -6,7 +6,7 @@ include("connection.php");
 if(isset($_POST["submit"]))
 {
     $title= $_POST["title"];
-    $descr = $_POST["description"];
+    $description = $_POST["description"];
     $userID = $_POST ["$userID"];
 
     $title = mysqli_real_escape_string($db, $title);
@@ -14,7 +14,7 @@ if(isset($_POST["submit"]))
 
 
     
-        $query = mysqli_query($db, "INSERT INTO bugs (title, descr, userID,)VALUES ('$title','$descr','$userID')")or die(mysqli_error($db));
+        $query = mysqli_query($db, "INSERT INTO bugs (title, descr, userID)VALUES ('$title','$description','$userID')")or die(mysqli_error($db));
         if(($query)==1)
         {
             echo "Thank You! ";
