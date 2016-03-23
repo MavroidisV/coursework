@@ -20,11 +20,13 @@ while ($row=mysqli_fetch_assoc($result)){
     $bugTitle=$row['title'];
     $bugID=$row['bugID'];
     
-    echo $bugID;
-    echo $bugTitle;
+    echo $bugID;"<br>";
+    echo $bugTitle;"<br>";
+    
+   
 
     //write the link to the page
-    echo '<a href="mybugs.php?id="'.$bugID.'>'.$bugTitle.'</a>';
+   echo '<a href="mybugs.php?id="'.$bugID.'>'.$bugTitle.'</a>';
 }
 ?>
 </body>
