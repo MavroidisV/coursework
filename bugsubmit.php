@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 session_start();
 include("connection.php");
 $id=$_SESSION["userID"];
@@ -16,7 +19,7 @@ if(isset($_POST["submit"])) {
     $query = mysqli_query($db, "INSERT INTO bugs (title,description,userID)VALUES ('$title','$description','$id')") or die(mysqli_error($db));
     if (($query) == 1) {
         echo "Thank You! you are now registered.";
-        echo "Please <a href = userlogin.php>Login</a>";
+        echo "Please <a href = 'userlogin.php'>Login</a>";
     }
 }
 ?>
