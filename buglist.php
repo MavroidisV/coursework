@@ -27,8 +27,11 @@ while ($row=mysqli_fetch_assoc($result)){
 
 
     //write the link to the page
-   echo '<a href="mybugs.php?id="'.$bugID.'>'.$bugTitle.'</a>';
+    echo '<a href="mybugs.php?id="'.$bugID.'>'.$bugTitle.'</a>';
+    echo '<td><a href="mybugs.php?id=',$bugID,'">',$bugTitle,'</a></td>';
+ 
 }
 ?>
+
 </body>
 
