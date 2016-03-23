@@ -5,7 +5,6 @@ include("bugsubmit.php");
 include("check.php");
 
 ?>
-<?php echo $id_check;?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +14,7 @@ include("check.php");
     <style>h1 {text-align: center} </style>
 </head>
 <body>
+<h1><?php echo $id_check;?></h1>
 <form method="post" action="bugsubmit.php" autocomplete="off">
 
 
