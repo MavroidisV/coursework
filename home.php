@@ -15,7 +15,8 @@ include("check.php");
 
 <a href = bugform.php>submit a form</a><br>
 <a href = mybugs.php>Bugs Submitted</a><br>
-<a href = buglist.php>Full List?</a>
+<a href = buglist.php>Full List?</a><br>
+<a href = comments.php>edo eimaste</a><br>
 <br><br><br>
 <a href="logout.php" style="font-size:18px">Logout?</a>
 </body>
