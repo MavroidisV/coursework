@@ -3,11 +3,13 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-
+session_start();
+$bugID=$_SESSION["bugID"];
     include("connection.php");
     include ("buglist.php");
+
 //select everything from our bugs table where the id is right
-$sql="select bugID,title,description from bugs where bugID= ".$_GET["bugID"];
+$sql="select bugID,title,description from bugs where bugID= ".$_GET[$bugID];
 
 //fetch our result from the database
 $result=mysqli_query($db,$sql);

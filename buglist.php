@@ -27,6 +27,8 @@ while ($row=mysqli_fetch_assoc($result)){
     
     echo $bugID;
     echo $bugTitle;
+
+    $_SESSION['bugID'] = $row['bugID'];
     
    
 
