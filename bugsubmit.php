@@ -16,9 +16,11 @@ if(isset($_POST["submit"])) {
     $description = mysqli_real_escape_string($db, $description);
 
     $intid = intval($id);
+    echo $intid;
+
     $sql = "INSERT INTO bugs (title,description,userID) VALUES ('$title','$description','$intid')";
     $result = mysqli_query($db,$sql) or die(mysqli_error($db));
-    if (($result) == 1) {
+    if ($result) {
         echo "Thank You! you are now registered.";
         echo "Please <a href = 'userlogin.php'>Login</a>";
     }
