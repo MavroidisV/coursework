@@ -59,9 +59,9 @@ $uid=$_SESSION["userID"];
 
         $comment= $_POST['comment'];
 
-        // echo $currentBugID;
-        //echo $uid;
-        // echo $comment;
+         echo $currentBugID;
+        echo $uid;
+         echo $comment;
 
         $qry="INSERT  INTO comments(bugID, userID, descriptionC) VALUES ('$currentBugID', '$uid','$comment')";
 
