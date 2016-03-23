@@ -13,7 +13,7 @@ $uid=$_SESSION["userID"];
 <form method="post" action="comments.php">
     <?php
 
-
+    include("changeBugStatus.php");
     include ("connect.php");//Establishing connection with our database
     //$dg = new C_DataGrid("SELECT * FROM users", "uid", "users"); This code is not functioning the way i want
     $sql="SELECT bugID,title,description FROM bugs";//select required dataset from database
@@ -36,7 +36,7 @@ $uid=$_SESSION["userID"];
         // $username=$row['username];
 
         echo '<table border="1" style="width:60%">'.'<col width="60">'. '<col width="60">'.'<col width="60">'.'<col width="60">'.'<tr>'.
-            '<a href="changeBugStatus.php?uid="'.$bugID.'>'.'<tr>'.'<td>'.$bugID.'</td>'.'<td>' . $title.'</td>'.'<td>'.
+            '<a href="changeBugStatus.php?uid=" '.$bugID.'>'.'<tr>'.'<td>'.$bugID.'</td>'.'<td>' . $title.'</td>'.'<td>'.
             $description.'</td>'.'<td>'.
             "<input type='radio' name='commentRadio' value='$bugID'>".
             '</td>'.'</a>'.'<br>'.'</tr>'.'</table>';
