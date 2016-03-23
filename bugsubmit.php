@@ -15,8 +15,8 @@ if(isset($_POST["submit"])) {
     $title = mysqli_real_escape_string($db, $title);
     $description = mysqli_real_escape_string($db, $description);
 
-
-    $sql = "INSERT INTO bugs (title,description,userID)VALUES ('$title','$description','$id')";
+    $intid = intval($id);
+    $sql = "INSERT INTO bugs (title,description,userID) VALUES ('$title','$description','$intid')";
     $result = mysqli_query($db,$sql) or die(mysqli_error($db));
     if (($result) == 1) {
         echo "Thank You! you are now registered.";
