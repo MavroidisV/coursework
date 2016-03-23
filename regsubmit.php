@@ -32,7 +32,7 @@ if(isset($_POST["submit"]))
         if(($query)==1)
         {
             //echo "Thank You! you are now registered.";
-            redirect("location: home.php");
+            redirect("home.php");
         }
 
     }
