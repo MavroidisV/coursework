@@ -2,7 +2,7 @@
 <h2>Bug List</h2>
 
 <?php
-/*
+
 include("connection.php");
 
 //select everything from our bugs table
