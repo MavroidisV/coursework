@@ -1,8 +1,4 @@
-<?php
-session_start();
-$uid=$_SESSION["userID"];
 
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +8,10 @@ $uid=$_SESSION["userID"];
 <body>
 <form method="post" action="comments.php">
     <?php
+    session_start();
+    $uid=$_SESSION["userID"];
+    echo $uid 
+
 
     include("changeBugStatus.php");
     include ("connect.php");//Establishing connection with our database
