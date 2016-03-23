@@ -14,6 +14,7 @@ include("check.php");
 <h1 class="hello">Hello, <em><?php echo $login_user;?>!</em></h1>
 
 <a href = bugform.php>submit a form</a>
+<a href = mybugs.php>Bugs Submitted</a>
 <br><br><br>
 <a href="logout.php" style="font-size:18px">Logout?</a>
 </body>
