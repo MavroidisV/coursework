@@ -15,10 +15,12 @@ if(isset($_POST["submit"]))
 
 
     $sql = "INSERT INTO bugs (title, description,)VALUES('$title','$description')";
-        //if(($query)==1)
-        {
-            echo "Thank You! ";
-            
+    
+    if (mysqli_query($db, $sql)) {
+        echo "New record created successfully";
+    } else {
+        echo "Error";
+        
         }
 
     }
