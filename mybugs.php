@@ -12,18 +12,18 @@ $bugID=$_SESSION["bugID"];
 $sql="select bugID,title,description from bugs where bugID= ".$_GET[$bugID];
 
 //fetch our result from the database
-$resul1t=mysqli_query($db,$sql);
+$result=mysqli_query($db,$sql);
 
 //we can scan through each row in the response
-$row1=mysqli_fetch_assoc($result1);
+$row=mysqli_fetch_assoc($result);
 
 //get the title and id from the bug
-$bugTitle=$row1['title'];
-$bugID=$row1['bugID'];
-$bugDesc=$row1['description'];
+$bugTitle=$row['title'];
+$bugID=$row['bugID'];
+$bugDesc=$row['description'];
 
 echo "<h2>".$bugTitle." </h2>";
-echo "<p>".$bugDesc."</p>"
+echo "<p>".$bugDesc."</p>";
 
 
 
