@@ -1,9 +1,14 @@
 <body>
+
 <h2>Bug List</h2>
 
 <?php
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 session_start();
-$uid=$_SESSION["userID"];
+
 include("connection.php");
 
 //select everything from our bugs table
@@ -20,8 +25,8 @@ while ($row=mysqli_fetch_assoc($result)){
     $bugTitle=$row['title'];
     $bugID=$row['bugID'];
     
-    echo $bugID;"<br>";
-    echo $bugTitle;"<br>";
+    echo $bugID;
+    echo $bugTitle;
     
    
 
