@@ -14,7 +14,7 @@ include("check.php");
     <style>h1 {text-align: center} </style>
 </head>
 <body>
-<h1><?php echo  $login_user1;?></h1>
+
 <form method="post" action="bugsubmit.php" autocomplete="off">
 
 
@@ -35,7 +35,7 @@ include("check.php");
     </table>
     <br>
     <div style="text-align:center">
-        <input type="submit" name="submit" value="Create your account">
+        <input type="submit" name="submit" value="Submit your form">
     </div>
 
 </form>
