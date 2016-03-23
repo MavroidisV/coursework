@@ -20,7 +20,6 @@ if(isset($_POST["submit"])) {
     $sql = "INSERT INTO bugs (title,description,userID) VALUES ('$title','$description','$id')";
     $result = mysqli_query($db,$sql) or die(mysqli_error($db));
     if ($result) {
-        header("location: home.php");
         echo "Thank You! your form is now submitted.";
         echo "Please <a href = 'userlogin.php'>Login</a>";
     }
