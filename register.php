@@ -45,7 +45,7 @@ include("submit.php");
 
         <tr>
             <td><label for="phone">Phone:</label></td>
-            <td><input type="text" name="phone" required class="input-text"></td>
+            <td><input type="text" name="phone" class="input-text"></td>
         </tr>
 
     </table>
