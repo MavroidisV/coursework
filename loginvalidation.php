@@ -29,7 +29,7 @@ else {
 if(mysqli_num_rows($result) == 1)
 {
     $_SESSION['username'] = $username;
-    $_SESSION['userID'] = $userID;// Initializing Session
+    $_SESSION['userID'] = $result;// Initializing Session
     header("location: home.php"); // Redirecting To another Page
 }else
 {
