@@ -1,7 +1,7 @@
 <?php
 session_start();
 include("connection.php");
-include("check.php");
+
 $id=$_SESSION["userID"];
 //check if it is set; if the user has typed the requirements in the fields
 //in the html we have asked for required fields in first name and last name, but not in php; so with a proxy they can be bypassed;
