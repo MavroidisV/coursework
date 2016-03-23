@@ -14,7 +14,7 @@ if(isset($_POST["submit"]))
 
 
     
-        $query = mysqli_query($db, "INSERT INTO bugs (title, description, userID)VALUES ('$title','$description','$userID')")or die(mysqli_error($db));
+        $query = mysqli_query($db, "INSERT INTO bugs (title, description,)VALUES ('$title','$description')")or die(mysqli_error($db));
         if(($query)==1)
         {
             echo "Thank You! ";
