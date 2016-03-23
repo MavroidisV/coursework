@@ -3,7 +3,6 @@
 
 session_start();
     include("connection.php");
-    include ("buglist.php");
 
 //select everything from our bugs table where the id is right
 $sql="select bugID,title,description from bugs where bugID= ".$_GET[$bugID];
