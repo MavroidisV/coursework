@@ -1,7 +1,6 @@
 <?php
 
 include("connection.php");
-include("bugsubmit.php");
 include("check.php");
 
 ?>
@@ -18,7 +17,7 @@ include("check.php");
 <form method="post" action="bugsubmit.php" autocomplete="off">
 
 
-    <h1>BUG FORMt</h1>
+    <h1>BUG FORM</h1>
     <table cellspacing="10px" class="box-table">
 
         <tr>
