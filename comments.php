@@ -10,7 +10,7 @@
     <?php
     session_start();
     $uid=$_SESSION["userID"];
-    echo $uid 
+    echo $uid;
 
 
     include("changeBugStatus.php");
