@@ -29,7 +29,7 @@ if(isset($_POST["submit"]))
     {
         //echo $name." ".$email." ".$password;
         $query = mysqli_query($db, "INSERT INTO users (firstname, lastname, username, password, email, phone)VALUES ('$firstname1','$lastname1','$username','$password', '$email', '$phone')")or die(mysqli_error($db));
-        if($query)
+        if(($query)==1)
         {
             //echo "Thank You! you are now registered.";
             header("location: home.php");
