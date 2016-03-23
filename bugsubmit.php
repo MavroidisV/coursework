@@ -13,9 +13,9 @@ if(isset($_POST["submit"]))
     $description = mysqli_real_escape_string($db, $description);
 
 
-    
-        $query = mysqli_query($db, "INSERT INTO bugs (title, description,)VALUES('$title','$description')")or die(mysqli_error($db));
-        if(($query)==1)
+
+    $sql = "INSERT INTO bugs (title, description,)VALUES('$title','$description')";
+        //if(($query)==1)
         {
             echo "Thank You! ";
             
