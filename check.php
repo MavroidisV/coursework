@@ -2,6 +2,7 @@
 include('connection.php');
 session_start();
 $user_check=$_SESSION['username'];
+$id_check=$_Session['userID'];
 
 $ses_sql = mysqli_query($db,"SELECT username FROM users WHERE username='$user_check' ");
 
