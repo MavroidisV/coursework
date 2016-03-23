@@ -6,7 +6,7 @@ include("connection.php");
 if(isset($_POST["submit"])) {
     $title = $_POST["title"];
     $description = $_POST["description"];
-    //$userID = $_POST ["$userID"];
+    $userID = $_POST ["$userID"];
 
     $title = mysqli_real_escape_string($db, $title);
     $description = mysqli_real_escape_string($db, $description);
