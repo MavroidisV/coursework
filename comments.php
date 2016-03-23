@@ -1,10 +1,7 @@
 <?php
 session_start();
-?>
+$uid=$_SESSION["userID"];
 
-<?php
-
-$uid=$_SESSION["userid"];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,11 +16,11 @@ $uid=$_SESSION["userid"];
 
     include ("connect.php");//Establishing connection with our database
     //$dg = new C_DataGrid("SELECT * FROM users", "uid", "users"); This code is not functioning the way i want
-    $sql="SELECT bugID,title,bugDesc FROM bugs";//select required dataset from database
+    $sql="SELECT bugID,title,description FROM bugs";//select required dataset from database
     //"SELECT bugID,title,bugDesc FROM bugs WHERE uid=1";//select required dataset from database
     $result=mysqli_query($db,$sql);//fetch data from database
 
-    echo '<h3>Comment on bugs </h3>'.$_SESSION["$userid"];
+    echo '<h3>Comment on bugs </h3>'.$_SESSION["userID"];
     echo '<table border="1" style="width:60%">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<th>'.'Bug ID'.
         '</th>'.'<th>'.'Title'.'</th>'.'<th>'.'Description'.
 
@@ -33,15 +30,15 @@ $uid=$_SESSION["userid"];
     WHILE($row=mysqli_fetch_assoc($result))
     {
         //get the userid, userTpe,userStatus,username
-        $bugid=$row['bugID'];
+        $bugID=$row['bugID'];
         $title=$row['title'];
-        $bugdesc=$row['bugDesc'];
+        $description=$row['description'];
         // $username=$row['username];
 
         echo '<table border="1" style="width:60%">'.'<col width="60">'. '<col width="60">'.'<col width="60">'.'<col width="60">'.'<tr>'.
-            '<a href="changeBugStatus.php?uid="'.$bugid.'>'.'<tr>'.'<td>'.$bugid.'</td>'.'<td>' . $title.'</td>'.'<td>'.
-            $bugdesc.'</td>'.'<td>'.
-            "<input type='radio' name='commentRadio' value='$bugid'>".
+            '<a href="changeBugStatus.php?uid="'.$bugID.'>'.'<tr>'.'<td>'.$bugID.'</td>'.'<td>' . $title.'</td>'.'<td>'.
+            $description.'</td>'.'<td>'.
+            "<input type='radio' name='commentRadio' value='$bugID'>".
             '</td>'.'</a>'.'<br>'.'</tr>'.'</table>';
 
 
@@ -66,7 +63,7 @@ $uid=$_SESSION["userid"];
         //echo $uid;
         // echo $comment;
 
-        $qry="INSERT  INTO bjtscomments(bugID, uid, bjtscomment) VALUES ('$currentBugID', '$uid','$comment')";
+        $qry="INSERT  INTO comments(bugID, userID, descriptionC) VALUES ('$currentBugID', '$uid','$comment')";
 
         if(mysqli_query($db, $qry)){
             echo "Records added successfully.";
