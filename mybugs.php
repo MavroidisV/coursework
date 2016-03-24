@@ -32,7 +32,7 @@ $sql1="select * from comments where bugID=" .$_GET["id"];
 $result=mysqli_query($db,$sql1);
 
 //scan through each row
-while ($row=mysqli_fetch_assoc(result)){
+while ($row=mysqli_fetch_assoc($result)){
     //get the tile and id from the bug
     $commentTitle=$row['title'];
     $comment = $row['comment'];
