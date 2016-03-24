@@ -1,3 +1,9 @@
+
+<?php
+
+//refresh the page every 5 mins*******n
+header('Refresh: 300'); ?>
+
 <body>
 
 <?php
