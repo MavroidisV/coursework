@@ -2,11 +2,6 @@
 session_start();
 include("connection.php");
 
-if(empty($_POST["username"]) || empty($_POST["password"]))
-{
-    echo "Both fields are required.";
-}
-else {
 
     // Define $username and $password
     $username = $_POST['username'];
@@ -35,7 +30,7 @@ if(mysqli_num_rows($result) == 1)
 }else
 {
     echo "Incorrect username or password.";
-}
+
 }
 
 ?>
