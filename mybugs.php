@@ -23,7 +23,25 @@ $bugDesc=$row['description'];
 echo $bugID;
 echo "<h2>".$bugTitle." </h2>";
 echo "<p>".$bugDesc."</p>";
- 
+
+//!!!!!!!!!show the comments in the main page!!!!!!!!!!
+
+$sql1="select * from comments where bugID=" .$_GET["id"];
+
+//fetch our result from the database
+$result=mysqli_query($db,$sql1);
+
+//scan through each row
+while ($row=mysqli_fetch_assoc(result)){
+    //get the tile and id from the bug
+    $commentTitle=$row['title'];
+    $comment = $row['comment'];
+    //write the link to the page
+    echo '<h3>'.$title.'</h3>';
+    echo '<p>'.$comment.'</p>';
+}
+
+ //-------------------------------------------
 //for comments look down
 
 $id=$_SESSION["userID"];
@@ -42,15 +60,11 @@ if(isset($_POST["submit"])) {
     }else {
         echo "ERROR: Could not be able to execute" . $qry . mysqli_error($db);
     }
-    /*if (mysqli_query($db, $qry)) {
-        echo "Records added successfully.";
+    
 
         //redirect user to login screen
         //header("location: index.php");
-    } else {
-        echo "ERROR: Could not be able to execute" . $qry . mysqli_error($db);
-    }*/
-
+   
 }
 
 
