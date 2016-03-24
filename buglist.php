@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<h2>Bug List</h2>
+<h2 class="h2">Bug List</h2>
 
 <?php
 
@@ -37,7 +37,7 @@ while ($row=mysqli_fetch_assoc($result)){
     $bugID=$row['bugID'];
 
 
-    echo '<table border="1" style="width:60%">'.'<col width="100px">'. '<col width="100px">'.'<col width="100px">'.'<tr>'.'<th>
+    echo '<table border="1" style="width:60%" class="box-table" class="input-text">'.'<col width="100px">'. '<col width="100px">'.'<col width="100px">'.'<tr>'.'<th>
     <a href="mybugs.php?id='.$bugID.'">'.$bugID.'</a>'.'</th>'.'<th>'.$bugTitle.'</th>'.'</table>';
     //echo $bugID;
     //echo $bugTitle;
