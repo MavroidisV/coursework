@@ -30,7 +30,7 @@ while ($row=mysqli_fetch_assoc($result)){
 
 
     echo '<table border="1" style="width:60%">'.'<col width="100px">'. '<col width="100px">'.'<col width="100px">'.'<tr>'.'<th>
-    <a href="mybugs.php?id='.$bugID.'">'.$bugTitle.'</a>'.'</th>'.'<th>'.$bugID.'</th>'.'<th>' . $bugTitle.'</th>'.'<th>'.'</table>';
+    <a href="mybugs.php?id='.$bugID.'">'.$bugTitle.'</a>'.'</th>'.'<th>'.$bugID.'</th>'.'<th>' . $bugTitle.'</th>'.'</table>';
     //echo $bugID;
     //echo $bugTitle;
 
