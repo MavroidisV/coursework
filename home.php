@@ -64,11 +64,11 @@ include("check.php");
             <li> <a href  = "bugform.php">Bug Report</a></li><br><br>
             <li> <a href = "buglist.php">Bug List</a></li><br><br><br><br>
 
-            <a href = "logout.php">Log out</a>
+            <li><a href = "logout.php">Log out</a></li>
 
         </ul>
         
-        <a href = "logout.php">Log out</a>
+        
 
     </nav>
 
