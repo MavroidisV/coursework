@@ -28,6 +28,7 @@ echo "<h2>".$bugTitle." </h2>";
 echo "<p>".$bugDesc."</p>";
 
 //!!!!!!!!!show the comments in the main page!!!!!!!!!!
+echo "<h2>Show comments of all users </h2>";"<br>";
 
 $sql1="select * from comments where bugID=" .$_GET["id"];
 
@@ -40,7 +41,7 @@ while ($row=mysqli_fetch_assoc($result)){
     $commentTitle=$row['title'];
     $comment = $row['comment'];
     //write the link to the page
-    echo '<h3>'.$title.'</h3>';
+    echo '<h3>'.$comentTitle.'</h3>';
     echo '<p>'.$comment.'</p>';
 }
 
