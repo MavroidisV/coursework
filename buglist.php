@@ -24,8 +24,7 @@ while ($row=mysqli_fetch_assoc($result)){
 
 
     echo '<table border="1" style="width:60%">'.'<col width="60">'. '<col width="60">'.'<col width="60">'.'<tr>'.
-        '<a href="mybugs.php?uid=" '.$bugID.'>'.'<tr>'.'<td>'.$bugTitle.'</td>'.'<td>' . $title.'</td>'.'<td>'.
-        $description.'</td>'.'<td>'.
+        '<a href="mybugs.php?uid=" '.$bugID.'>'.'<tr>'.'<td>'.$bugID.'</td>'.'<td>' . $bugTitle.'</td>'.'<td>'.
         "<input type='radio' name='commentRadio' value='$bugID'>".
         '</td>'.'</a>'.'<br>'.'</tr>'.'</table>';
     //echo $bugID;
