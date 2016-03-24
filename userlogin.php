@@ -26,7 +26,7 @@ if ((isset($_SESSION['username']) != ''))
         <label for="password">Password:</label>
         <input type="password" name="password" placeholder="password" class="input-text" />  <br>
         
-        <div class="error"><?php echo $error;?><?php //echo $username; echo $password;?></div>
+        <div class="error"><?php //use the echo $error; here if you want to.. not beautiful?></div>
         
         <input type="submit" name="submit" value = "login" class="input-text"/><br><br>
         Not already a user? Please <a href  = "register.html"> register </a>
