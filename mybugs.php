@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 <body>
-
-<form method="post" action="mybugs.php>
-
 <?php
 
 session_start();
@@ -56,12 +51,12 @@ if(isset($_POST["submit"])) {
 
 ?>
 
-
+<form method="post" action="mybugs.php">
     <p>Comments</p>
-    
-    <Label for ="comment" cols="40" rows="5">
+    <textarea name="comment" cols="40" rows="5"  ></textarea>
     <p></p>
     <input type="submit" name="submit" value="submit">
+
 
 
 </body>
