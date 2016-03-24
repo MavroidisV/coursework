@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <title>Register</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-
+    <style type="text/css">
+    nav ul li a {
+        color: #606;
+        </style>
 </head>
+
+
+
+
+
 <body>
 
 <h2 class="h2">Bug List</h2>
