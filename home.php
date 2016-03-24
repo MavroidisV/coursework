@@ -9,6 +9,7 @@ include("check.php");
     <title>Home</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
     <style>h2 {text-align: center} </style>
+    <style>a:link {color: #fff}</style>
 </head>
 
 <body>
@@ -19,7 +20,7 @@ include("check.php");
 <table cellspacing="10px" class="box-table" class="indextable">
 
     <tr>
-        <td class = "indextd" class="indextd:hover"> <a href = bugform.php>Bug Report</a><br><br></td>
+        <td class = "indextd" class="indextd:hover"> <a href = bugform.php>Bug Report</a><br></td>
     </tr>
 
 
