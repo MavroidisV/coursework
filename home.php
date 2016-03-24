@@ -62,7 +62,10 @@ include("check.php");
 
         <ul>
             <li> <a href  = "bugform.php">Bug Report</a></li><br><br>
-            <li> <a href = "buglist.php">Bug List</a></li><br><br>
+            <li> <a href = "buglist.php">Bug List</a></li><br><br><br><br>
+
+            <a href = "logout.php">Log out</a>
+
         </ul>
         
         <a href = "logout.php">Log out</a>
