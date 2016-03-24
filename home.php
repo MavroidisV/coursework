@@ -13,7 +13,7 @@ include("check.php");
 
 <body>
 
-<h2>Hello, <em><?php echo $login_user;?>!</em></h2>
+<h2 class="h2">Hello, <em><?php echo $login_user;?>!</em></h2>
 
 
 <table cellspacing="10px" class="box-table" class="indextable">
