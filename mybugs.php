@@ -65,17 +65,12 @@ if(isset($_POST["submit"])) {
         echo "ERROR: Could not be able to execute" . $qry . mysqli_error($db);
     }
     
-
-        //redirect user to login screen
-        //header("location: index.php");
-   
 }
 
-
 ?>
-
+<br><br>
 <form method="post" action=>
-    <p>Comments</p>
+    <p>Comments:</p>
     <textarea name="comment" cols="40" rows="5"  ></textarea>
     <p></p>
     <input type="submit" name="submit" value="submit">
