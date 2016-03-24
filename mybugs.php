@@ -36,18 +36,24 @@ echo "<p>".$bugDesc."</p>";
 <?php
 
 $bugID=$_GET["id"];
-echo $bugID;
-    $qry="INSERT  INTO comments(bugID, userID, descriptionC) VALUES ('$bugID', '$userID','$comment')";
+$id=$_SESSION["userID"];
 
-    if(mysqli_query($db, $qry)){
-    echo "Records added successfully.";
+    if(isset($_POST["submit"])) {
+        $comment = $_POST["comment"];
 
-    //redirect user to login screen
-    //header("location: index.php");
-    } else{
-    echo "ERROR: Could not be able to execute" .$qry. mysqli_error($db);
+        $comment = mysqli_real_escape_string($db, $comment);
+
+        $qry = "INSERT  INTO comments(bugID, userID, descriptionC) VALUES ('$bugID', '$id','$comment')";
+
+        if (mysqli_query($db, $qry)) {
+            echo "Records added successfully.";
+
+            //redirect user to login screen
+            //header("location: index.php");
+        } else {
+            echo "ERROR: Could not be able to execute" . $qry . mysqli_error($db);
+        }
+
     }
-   
-    
     ?>
 </body>
