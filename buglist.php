@@ -14,6 +14,12 @@ $sql="SELECT * FROM bugs";
 //fetch our result from the database
 $result=mysqli_query($db,$sql);
 
+
+//echo '<h3> </h3>'.$_SESSION["userID"];
+echo '<table border="1" style="width:60%">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<th>'.'Bug ID'.
+    '</th>'.'<th>'.'Title'.'</th>'.'<th>'.'Select Bug'.'</th>'.'</table>';
+
+
 //we scan through each row in the response
 
 while ($row=mysqli_fetch_assoc($result)){
@@ -23,7 +29,7 @@ while ($row=mysqli_fetch_assoc($result)){
     $bugID=$row['bugID'];
 
 
-    echo '<table border="1" style="width:60%">'.'<col width="60">'. '<col width="60">'.'<col width="60">'.'<tr>'.
+    echo '<table border="1" style="width:60%">'.'<col width="30">'. '<col width="30">'.'<col width="30">'.'<tr>'.
         '<a href="mybugs.php?uid=" '.$bugID.'>'.'<tr>'.'<td>'.$bugID.'</td>'.'<td>' . $bugTitle.'</td>'.'<td>'.
         "<input type='radio' name='commentRadio' value='$bugID'>".
         '</td>'.'</a>'.'<br>'.'</tr>'.'</table>';
