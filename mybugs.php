@@ -32,4 +32,22 @@ echo "<p>".$bugDesc."</p>";
     <p></p>
     <input type="submit" name="submit" value="submit">
 
+
+<?php
+
+$bugID=$_GET["id"];
+echo $bugID;
+    $qry="INSERT  INTO comments(bugID, userID, descriptionC) VALUES ('$bugID', '$userID','$comment')";
+
+    if(mysqli_query($db, $qry)){
+    echo "Records added successfully.";
+
+    //redirect user to login screen
+    //header("location: index.php");
+    } else{
+    echo "ERROR: Could not be able to execute" .$qry. mysqli_error($db);
+    }
+   
+    
+    ?>
 </body>
