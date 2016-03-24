@@ -1,4 +1,9 @@
 <?php
+
+date_default_timezone_set('UTC');
+$date = date('Y-m-d');
+
+
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -17,7 +22,7 @@ if(isset($_POST["submit"])) {
 
 
 
-    $sql = "INSERT INTO bugs (title,description,userID) VALUES ('$title','$description','$id')";
+    $sql = "INSERT INTO bugs (title,description,userID, postDate) VALUES ('$title','$description','$id','$date')";
     $result = mysqli_query($db,$sql) or die(mysqli_error($db));
     if ($result) {
         echo "Thank You! You have submitted your bug form and you will be redirected to your home page";
