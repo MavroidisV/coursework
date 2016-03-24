@@ -28,7 +28,7 @@ echo "<p>".$bugDesc."</p>";
 
 
 $id=$_SESSION["userID"];
-
+$bugID=$_SESSION["bugID"];
 if(isset($_POST["submit"])) {
 
     $bid=$bugID;
