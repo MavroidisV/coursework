@@ -28,7 +28,7 @@ echo "<h3>Title of the Bug:".$bugTitle." </h3>";
 echo "<p>".$bugDesc."</p>";
 
 //!!!!!!!!!show the comments in the main page!!!!!!!!!!
-echo "<h2>Show comments of all users </h2>";"<br>";
+echo "<h2>Comments of all users </h2>";"<br>";
 
 $sql1="select * from comments where bugID=" .$_GET["id"];
 
