@@ -16,7 +16,7 @@ include("regsubmit.php");
 <form method="post" action="regsubmit.php" autocomplete="on">
 
 
-    <h1>Create account</h1>
+    <h1 class="h1">Create account</h1>
     <table cellspacing="10px" class="box-table">
 
         <tr>
