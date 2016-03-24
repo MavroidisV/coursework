@@ -9,7 +9,7 @@ include("check.php");
     <title>Home</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
     <style>h2 {text-align: center} </style>
-    <style>a:link {color: #fff}</style>
+    <style>a:link {color: #606}</style>
     
     
     <style type="text/css">
