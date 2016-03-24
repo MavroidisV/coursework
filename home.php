@@ -17,7 +17,7 @@ include("check.php");
 
     border-radius: 4px;
     border: 2px #606 solid;
-    width:80px;
+    width:100px;
     background-color: #fff;
     text-align: center;
     margin: auto;/*element middle page*/
