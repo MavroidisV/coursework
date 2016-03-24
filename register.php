@@ -10,7 +10,7 @@ include("regsubmit.php");
     <meta charset="UTF-8">
     <title>Register</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <style>h1 {text-align: center} </style>
+    <style>h1 {text-align: center}{color: #606} </style>
 </head>
 <body>
 <form method="post" action="regsubmit.php" autocomplete="on">
