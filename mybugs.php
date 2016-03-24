@@ -34,7 +34,7 @@ echo "<h3 class='h3'>".$bugTitle." </h3>";
 echo "<p>".$bugDesc."</p>";
 
 //!!!!!!!!!show the comments in the main page!!!!!!!!!!
-echo "<h2>Comments of all users </h2>";"<br>";
+echo "<h3>Comments of all users </h3>";"<br>";
 
 $sql1="select * from comments where bugID=" .$_GET["id"];
 
@@ -47,8 +47,8 @@ while ($row=mysqli_fetch_assoc($result)){
     $userID=$row['userID'];
     $comment = $row['descriptionC'];
     //write the link to the page
-    echo "<h4>User ".$userID. " commented</h4>";
-    echo '<p>'.$comment.'</p>';
+    echo "<h4 class='h4'>User ".$userID. " commented</h4>";
+    echo $comment;
 }
 
  //-------------------------------------------
