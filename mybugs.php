@@ -39,8 +39,9 @@ if(isset($_POST["submit"])) {
     if ($result2) {
         echo "Thank You! your comment is now submitted.";
         echo "Please <a href = 'userlogin.php'>Login</a>";
+    }else {
+        echo "ERROR: Could not be able to execute" . $qry . mysqli_error($db);
     }
-
     /*if (mysqli_query($db, $qry)) {
         echo "Records added successfully.";
 
