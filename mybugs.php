@@ -29,7 +29,7 @@ $bugTitle=$row['title'];
 $bugID=$row['bugID'];
 $bugDesc=$row['description'];
 
-echo "<h3 class='h3'>BUG ID:" .$bugID."</h3>";
+//echo "<h3 class='h3'>BUG ID:" .$bugID."</h3>";
 echo "<h3 class='h3'>".$bugTitle." </h3>";
 echo "<p>".$bugDesc."</p>";
 
@@ -76,8 +76,8 @@ if(isset($_POST["submit"])) {
 ?>
 <br><br>
 <form method="post" action=>
-    <p>Comments:</p>
-    <textarea name="comment" cols="40" rows="5"  ></textarea>
+    <p class="p">Comments:</p>
+    <textarea name="comment" cols="40" rows="5" class="input-text1" ></textarea>
     <p></p>
     <input type="submit" name="submit" value="submit">
 </form>
