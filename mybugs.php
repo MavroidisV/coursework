@@ -30,12 +30,12 @@ $bugID=$row['bugID'];
 $bugDesc=$row['description'];
 
 //echo "<h3 class='h3'>BUG ID:" .$bugID."</h3>";
-echo "<h3 class='h3'>".$bugTitle." </h3>";
+echo "<h3 class='h3a'>".$bugTitle." </h3>";
 echo "<p>".$bugDesc."</p>";
 echo "<br>";
 
 //!!!!!!!!!show the comments in the main page!!!!!!!!!!
-echo "<h3 class='h3'>Comments of all users </h3>";
+echo "<h3 class='h3a'>Comments of all users </h3>";
 
 $sql1="select * from comments where bugID=" .$_GET["id"];
 
