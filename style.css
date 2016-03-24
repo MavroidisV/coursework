@@ -51,8 +51,8 @@ table { margin-left: auto;
 .indextable {
 
     border-radius: 4px;
-    border: 1px #ddd solid;
-    width:100px;
+    border: 1px #606 solid;
+    width:200px;
     background-color: #fff;
     text-align: center;
     margin: auto;/*element middle page*/
@@ -60,16 +60,16 @@ table { margin-left: auto;
 
 
 .indextd {
-    display: inline;
     text-decoration: none;
     padding: .4em 0.5em;
-    color: #000;
+    color: #606;
     background-color: #fff;
+    font-size:20px;
 }
 
 
 
 .indextd:hover {
     color: #fff;
-    background-color: #000;
+    background-color: #606;
 }
