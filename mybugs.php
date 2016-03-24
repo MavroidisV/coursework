@@ -15,15 +15,16 @@ $row=mysqli_fetch_assoc($result);
 
 //get the title and id from the bug
 $bugTitle=$row['title'];
-//$bugID=$row['bugID'];
+$bugID=$row['bugID'];
 $bugDesc=$row['description'];
 
+echo $bugID;
 echo "<h2>".$bugTitle." </h2>";
 echo "<p>".$bugDesc."</p>";
  
 //for comments look down
 
-$bugID=$_GET["id"];
+
 $id=$_SESSION["userID"];
 
 if(isset($_POST["submit"])) {
