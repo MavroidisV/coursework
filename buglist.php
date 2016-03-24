@@ -23,18 +23,18 @@ while ($row=mysqli_fetch_assoc($result)){
     $bugID=$row['bugID'];
 
 
-   // echo '<table border="1" style="width:60%">'.'<col width="60">'. '<col width="60">'.'<col width="60">'.'<col width="60">'.'<tr>'.
-     //   '<a href="mybugs.php?id=\',$bugID,\'">\',$bugTitle,\'</a>'
-     //   "<input type='radio' name='commentRadio' value='$bugID'>".
-       // '</td>'.'</a>'.'<br>'.'</tr>'.'</table>';
-    
+    echo '<table border="1" style="width:60%">'.'<col width="60">'. '<col width="60">'.'<col width="60">'.'<tr>'.
+        '<a href="mybugs.php?uid=" '.$bugID.'>'.'<tr>'.'<td>'.$bugTitle.'</td>'.'<td>' . $title.'</td>'.'<td>'.
+        $description.'</td>'.'<td>'.
+        "<input type='radio' name='commentRadio' value='$bugID'>".
+        '</td>'.'</a>'.'<br>'.'</tr>'.'</table>';
     //echo $bugID;
     //echo $bugTitle;
 
 
     //write the link to the page
     //echo '<a href="mybugs.php?id="'.$bugID.'>'.$bugTitle.'</a>';
-    echo '<td><a href="mybugs.php?id=',$bugID,'">',$bugTitle,'</a></td>';
+    //echo '<td><a href="mybugs.php?id=',$bugID,'">',$bugTitle,'</a></td>';
  
 }
 ?>
