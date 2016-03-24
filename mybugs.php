@@ -41,7 +41,7 @@ while ($row=mysqli_fetch_assoc($result)){
     $commentTitle=$row['title'];
     $comment = $row['comment'];
     //write the link to the page
-    echo '<h3>'.$comentTitle.'</h3>';
+    echo '<h3>'.$commentTitle.'</h3>';
     echo '<p>'.$comment.'</p>';
 }
 
