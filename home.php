@@ -8,12 +8,12 @@ include("check.php");
     <meta charset="utf-8">
     <title>Home</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <style>h1 {text-align: center} </style>
+    <style>h2 {text-align: center} </style>
 </head>
 
 <body>
 
-<h1>Hello, <em><?php echo $login_user;?>!</em></h1>
+<h2>Hello, <em><?php echo $login_user;?>!</em></h2>
 
 
 <table cellspacing="10px" class="box-table" class="indextable">

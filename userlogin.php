@@ -23,7 +23,7 @@ if ((isset($_SESSION['username']) != ''))
     <form method="post" action="loginvalidation.php" class="box-form" autocomplete="on">
         <label for = "username">Username:</label>
         <input type="text" name="username" placeholder="username" class="input-text"/><br>
-        <label for="password">Password:</label>
+        <label for="password">Password: </label>
         <input type="password" name="password" placeholder="password" class="input-text" />  <br>
         
         <div class="error"><?php //use the echo $error; here if you want to.. not beautiful?></div>
