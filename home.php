@@ -10,6 +10,40 @@ include("check.php");
     <link rel="stylesheet" href="style.css" type="text/css" />
     <style>h2 {text-align: center} </style>
     <style>a:link {color: #fff}</style>
+    
+    
+    <style type="text/css">
+    nav ul {
+
+    border-radius: 4px;
+    border: 1px #606 solid;
+    width:100px;
+    background-color: #fff;
+    text-align: center;
+    margin: auto;/*element middle page*/
+    padding: 100px;        }
+
+    nav ul li {
+        display: inline;
+
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        padding: .4em 0.5em;
+        color: #606;
+        background-color: #fff;
+        font-size:20px;
+
+    }
+
+    nav ul li a:hover {
+        color: #fff;
+        background-color: #606;
+    }
+
+    </style>
+  
 </head>
 
 <body>
@@ -17,28 +51,27 @@ include("check.php");
 <h2 class="h2">Hello, <em><?php echo $login_user;?>!</em></h2>
 
 
-<table cellspacing="10px" class="box-table" class="indextable">
 
-    <tr>
-        <td class =  class="indextd:hover"> <a href = bugform.php>Bug Report</a><br></td>
-    </tr>
+<header>
 
+    <h1 class="h1"> Welcome</h1>
+    <br>
+    <br>
 
-    <td class = class="indextd:hover"><a href = buglist.php>Bug List</a><br></label></td>
-    
-    </tr>
+    <nav>
 
-    <tr>
-        <td class = "indextd" class="indextd:hover"><a href = comments.php>edo eimaste</a></td>
+        <ul>
+            <li> <a href  = "bugform.php">Bug Report</a></li><br><br>
+            <li> <a href = "buglist.php">Bug List</a></li><br><br>
+        </ul>
         
-    </tr>
+        <a href = "logout.php">Log out</a>
 
-    <tr>
-        <td><a href="logout.php" style="font-size:18px">Logout?</a></td>
+    </nav>
 
-    </tr>
-    
-</table>
+</header>
+
+
 
 
 </body>
