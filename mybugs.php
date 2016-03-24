@@ -38,10 +38,10 @@ $result=mysqli_query($db,$sql1);
 //scan through each row
 while ($row=mysqli_fetch_assoc($result)){
     //get the tile and id from the bug
-    $commentTitle=$row['title'];
-    $comment = $row['comment'];
+    $userID=$row['userID'];
+    $comment = $row['descriptionC'];
     //write the link to the page
-    echo '<h3>'.$commentTitle.'</h3>';
+    echo '<h3>'.$userID.'</h3>';
     echo '<p>'.$comment.'</p>';
 }
 
