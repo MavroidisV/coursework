@@ -26,9 +26,9 @@ include("check.php");
         </tr>
 
         <tr>
-            
-            <td><textarea name="comment" cols="40" rows="5"  ></textarea>
-            <td><input type ="comment" name="description" class="input-text"   cols="40" rows="5" required></td>
+            <td>Description:</td>
+            <td><textarea name="description" cols="40" rows="5"  ></textarea>
+            </td>
         </tr>
 
 
