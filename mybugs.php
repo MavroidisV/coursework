@@ -58,8 +58,8 @@ if(isset($_POST["submit"])) {
 
 
     <p>Comments</p>
-    <label for="comment">Username:</label>
-    <Labelfor ="comment" cols="40" rows="5">
+    
+    <Label for ="comment" cols="40" rows="5">
     <p></p>
     <input type="submit" name="submit" value="submit">
 
