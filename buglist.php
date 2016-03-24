@@ -29,7 +29,7 @@ while ($row=mysqli_fetch_assoc($result)){
     $bugID=$row['bugID'];
 
 
-    echo '<table border="1" style="width:60%">'.'<col width="60">'. '<col width="60">'.'<col width="60">'.'<tr>'.'<th>
+    echo '<table border="1" style="width:60%">'.'<col width="auto">'. '<col width="auto">'.'<col width="auto">'.'<tr>'.'<th>
     <a href="mybugs.php?id='.$bugID.'">'.$bugTitle.'</a>'.'</th>'.'<th>'.$bugID.'</th>'.'<th>' . $bugTitle.'</th>'.'<th>'.
         "<input type='radio' name='commentRadio' value='$bugID'>".
         '</th>'.'</a>'.'<br>'.'</tr>'.'</table>';
