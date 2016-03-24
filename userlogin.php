@@ -29,7 +29,7 @@ if ((isset($_SESSION['username']) != ''))
         <div class="error"><?php //use the echo $error; here if you want to.. not beautiful?></div>
         
         <input type="submit" name="submit" value = "login" /><br><br>
-        Not already a user? Please <a href  = "register.html"> register </a>
+        Not already a user? Please <a href  = "register.php"> register </a>
     </form>
     
 
