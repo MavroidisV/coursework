@@ -1,21 +1,10 @@
 <body>
 
-
-
-<form method="post" action="mybugs.php">
-    <p>Comments</p>
-    <textarea name="comment" cols="40" rows="5"  ></textarea>
-    <p></p>
-    <input type="submit" name="submit" value="submit">
-</form>
-
-
-
-
 <?php
 
 session_start();
     include("connection.php");
+
 
 //select everything from our bugs table where the id is right
 $sql="select * from bugs where bugID=" .$_GET["id"];
@@ -64,6 +53,12 @@ if(isset($_POST["submit"])) {
 
 ?>
 
+<form method="post" action="mybugs.php">
+    <p>Comments</p>
+    <textarea name="comment" cols="40" rows="5"  ></textarea>
+    <p></p>
+    <input type="submit" name="submit" value="submit">
+</form>
 
 
 </body>
