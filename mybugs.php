@@ -29,8 +29,8 @@ $bugTitle=$row['title'];
 $bugID=$row['bugID'];
 $bugDesc=$row['description'];
 
-echo "<h3>BUG ID:" .$bugID."</h3>";
-echo "<h3>".$bugTitle." </h3>";
+echo "<h3 class='h3'>BUG ID:" .$bugID."</h3>";
+echo "<h3 class='h3'>".$bugTitle." </h3>";
 echo "<p>".$bugDesc."</p>";
 
 //!!!!!!!!!show the comments in the main page!!!!!!!!!!
