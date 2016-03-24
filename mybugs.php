@@ -15,13 +15,34 @@ $row=mysqli_fetch_assoc($result);
 
 //get the title and id from the bug
 $bugTitle=$row['title'];
-$bugID=$row['bugID'];
+//$bugID=$row['bugID'];
 $bugDesc=$row['description'];
 
 echo "<h2>".$bugTitle." </h2>";
 echo "<p>".$bugDesc."</p>";
+ 
+//for comments look down
 
+$bugID=$_GET["id"];
+$id=$_SESSION["userID"];
 
+if(isset($_POST["submit"])) {
+    $comment = $_POST["comment"];
+
+    $comment = mysqli_real_escape_string($db, $comment);
+
+    $qry = "INSERT  INTO comments(bugID, userID, descriptionC) VALUES ('$bugID', '$id','$comment')";
+
+    if (mysqli_query($db, $qry)) {
+        echo "Records added successfully.";
+
+        //redirect user to login screen
+        //header("location: index.php");
+    } else {
+        echo "ERROR: Could not be able to execute" . $qry . mysqli_error($db);
+    }
+
+}
 
 
 ?>
@@ -33,27 +54,5 @@ echo "<p>".$bugDesc."</p>";
     <input type="submit" name="submit" value="submit">
 
 
-<?php
 
-$bugID=$_GET["id"];
-$id=$_SESSION["userID"];
-
-    if(isset($_POST["submit"])) {
-        $comment = $_POST["comment"];
-
-        $comment = mysqli_real_escape_string($db, $comment);
-
-        $qry = "INSERT  INTO comments(bugID, userID, descriptionC) VALUES ('$bugID', '$id','$comment')";
-
-        if (mysqli_query($db, $qry)) {
-            echo "Records added successfully.";
-
-            //redirect user to login screen
-            //header("location: index.php");
-        } else {
-            echo "ERROR: Could not be able to execute" . $qry . mysqli_error($db);
-        }
-
-    }
-    ?>
 </body>
