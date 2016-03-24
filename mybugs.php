@@ -35,7 +35,7 @@ if(isset($_POST["submit"])) {
     
     $qry = "INSERT  INTO comments(bugID, userID, descriptionC) VALUES ('$bugID', '$id','$comment')";
 
-    $result2 = mysqli_query($db,$sql) or die(mysqli_error($db));
+    $result2 = mysqli_query($db,$qry) or die(mysqli_error($db));
     if ($result2) {
         echo "Thank You! your comment is now submitted.";
         echo "Please <a href = 'userlogin.php'>Login</a>";
