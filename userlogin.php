@@ -24,11 +24,14 @@ if ((isset($_SESSION['username']) != ''))
         <label for = "username">Username:</label>
         <input type="text" name="username" placeholder="username" class="input-text"/><br>
         <label for="password">Password:</label>
+        
+        <div class="error"><?php echo $error;?><?php //echo $username; echo $password;?></div>
+        
         <input type="password" name="password" placeholder="password" class="input-text" />  <br>
         <input type="submit" name="submit" value = "login" class="input-text"/><br><br>
         Not already a user? Please <a href  = "register.html"> register </a>
     </form>
-    <div class="error"><?php echo $error;?><?php //echo $username; echo $password;?></div>
+    
 
 </body>
 </html>
