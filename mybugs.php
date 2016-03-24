@@ -55,7 +55,7 @@ if(isset($_POST["submit"])) {
 
 ?>
 
-<form method="post" action="mybugs.php">
+<form method="post" action=>
     <p>Comments</p>
     <textarea name="comment" cols="40" rows="5"  ></textarea>
     <p></p>
