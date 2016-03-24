@@ -32,8 +32,8 @@ if(isset($_POST["submit"]))
         if(($query)==1)
         {
            //header("location: userlogin.php");
-            echo "Thank You! you are now registered.";
-            header("Refresh: 5; url=userlogin.php");
+            echo "Thank You! you are now registered and you will be redirected to Log In for the first time";
+            header("Refresh: 4; url=userlogin.php");
            // echo "Please <a href = userlogin.php>Login</a>";
         }
 
