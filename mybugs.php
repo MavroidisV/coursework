@@ -65,8 +65,8 @@ if(isset($_POST["submit"])) {
 
     $result2 = mysqli_query($db,$qry) or die(mysqli_error($db));
     if ($result2) {
-        echo "Thank You! you have submitted a comment! We will refresh your page now......";
-        header("Refresh: 4;");
+        echo "Thank You! you have submitted a comment! We will refresh your page now......and your page will be refreshed every 5 mins!!!";
+        header("Refresh: 5;");
     }else {
         echo "ERROR: Could not be able to execute" . $qry . mysqli_error($db);
     }
