@@ -24,7 +24,7 @@ include("check.php");
     padding: 100px;        }
 
     nav ul li {
-        display: inline;
+        display: block;
 
     }
 
@@ -53,8 +53,7 @@ include("check.php");
 
 
 <header>
-
-    <h1 class="h1"> Welcome</h1>
+    
     <br>
     <br>
 
