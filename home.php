@@ -18,10 +18,10 @@ include("check.php");
     border-radius: 4px;
     border: 2px #606 solid;
     width:80px;
-    background-color: #000;
+    background-color: #fff;
     text-align: center;
     margin: auto;/*element middle page*/
-    padding: 80px;        }
+    padding: 100px;        }
 
     nav ul li {
         display: inline;
@@ -34,6 +34,7 @@ include("check.php");
         color: #606;
         background-color: #fff;
         font-size:20px;
+        width: 50px;
 
     }
 
