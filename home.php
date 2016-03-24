@@ -16,15 +16,15 @@ include("check.php");
     nav ul {
 
     border-radius: 4px;
-    border: 1px #606 solid;
-    width:100px;
+    border: 2px #606 solid;
+    width:80px;
     background-color: #fff;
     text-align: center;
     margin: auto;/*element middle page*/
-    padding: 100px;        }
+    padding: 200px;        }
 
     nav ul li {
-        display: block;
+        display: inline;
 
     }
 
