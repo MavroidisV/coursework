@@ -25,4 +25,11 @@ echo "<p>".$bugDesc."</p>";
 
 
 ?>
+
+<form method="post" action="comments.php">
+    <p>Comments</p>
+    <textarea name="comment" cols="40" rows="5"  ></textarea>
+    <p></p>
+    <input type="submit" name="submit" value="submit">
+
 </body>
