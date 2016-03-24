@@ -10,14 +10,14 @@ include("check.php");
     <meta charset="UTF-8">
     <title>Bug Form</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <style>h1 {text-align: center} </style>
+    
 </head>
 <body>
 
 <form method="post" action="bugsubmit.php" autocomplete="off">
 
 
-    <h1>BUG FORM</h1>
+    <h1 class="h1">Bug Form</h1>
     <table cellspacing="10px" class="box-table">
 
         <tr>
