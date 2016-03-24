@@ -21,7 +21,7 @@ include("check.php");
     background-color: #fff;
     text-align: center;
     margin: auto;/*element middle page*/
-    padding: 200px;        }
+    padding: 80px;        }
 
     nav ul li {
         display: inline;
