@@ -16,16 +16,12 @@ include("check.php");
 <h1>Hello, <em><?php echo $login_user;?>!</em></h1>
 
 
-<table cellspacing="10px" class="box-table">
+<table cellspacing="10px" class="box-table" class="indextable">
 
     <tr>
         <td><a href = bugform.php>Bug Report</a><br></td>
     </tr>
-
-    <tr>
-        <td><label for="lastname">Last name:</label></td>
-        
-    </tr>
+    
 
     <td><a href = buglist.php>Bug List</a><br></label></td>
     
