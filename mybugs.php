@@ -31,6 +31,9 @@ if(isset($_POST["submit"])) {
     $comment = $_POST["comment"];
 
     $comment = mysqli_real_escape_string($db, $comment);
+    
+    echo $bugID;
+    echo $bugID;
 
     $qry = "INSERT  INTO comments(bugID, userID, descriptionC) VALUES ('$bugID', '$id','$comment')";
 
