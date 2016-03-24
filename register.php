@@ -20,33 +20,32 @@ include("regsubmit.php");
     <table cellspacing="10px" class="box-table">
 
         <tr>
-            <td class="input-text"><label for="firstname">First name:</label></td>
-            <td class><input type="text" name="firstname"required></td>
+            <td><label for="firstname">First name:</label></td>
+            <td><input type="text" name="firstname" class="input-text" required></td>
         </tr>
 
         <tr>
-            <td class="input-text1"><label for="lastname">Last name:</label></td>
-            <td class="input-text1"><input type ="text" name="lastname" required></td>
+            <td><label for="lastname">Last name:</label></td>
+            <td><input type ="text" name="lastname" class="input-text" required></td>
+        </tr>
+
+        <td><label for="username">Username:</label></td>
+        <td><input type = "text" name="username" class="input-text" required></td>
         </tr>
 
         <tr>
-        <td class="input-text1"><label for="username">Username:</label></td>
-        <td class="input-text1"><input type = "text" name="username"  required></td>
+            <td><label for="password">Password:</label></td>
+            <td><input type ="password" name="password" class="input-text" required></td>
         </tr>
 
         <tr>
-            <td class="input-text1"><label for="password">Password:</label></td>
-            <td class="input-text1"><input type ="password" name="password" required></td>
+            <td><label for="email">Email:</label></td>
+            <td><input type ="email" name="email" class="input-text" required><br><?php echo $msg;?></td>
         </tr>
 
         <tr>
-            <td class="input-text1"><label for="email">Email:</label></td>
-            <td class="input-text1"><input type ="email" name="email"required><br><?php echo $msg;?></td>
-        </tr>
-
-        <tr>
-            <td class="input-text1"><label for="phone">Phone:</label></td>
-            <td class="input-text1"><input type="text" name="phone"></td>
+            <td><label for="phone">Phone:</label></td>
+            <td><input type="text" name="phone" class="input-text"></td>
         </tr>
 
     </table>
