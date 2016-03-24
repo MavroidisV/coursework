@@ -30,14 +30,16 @@ echo "<p>".$bugDesc."</p>";
 $id=$_SESSION["userID"];
 
 if(isset($_POST["submit"])) {
+
+    $bid=$bugID;
     $comment = $_POST["comment"];
 
     $comment = mysqli_real_escape_string($db, $comment);
     
-    echo $bugID;
-    echo $bugID;
+    echo $bid;
+    echo $bid;
 
-    $qry = "INSERT  INTO comments(bugID, userID, descriptionC) VALUES ('$bugID', '$id','$comment')";
+    $qry = "INSERT  INTO comments(bugID, userID, descriptionC) VALUES ('$bid', '$id','$comment')";
 
     if (mysqli_query($db, $qry)) {
         echo "Records added successfully.";
