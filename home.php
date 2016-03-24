@@ -19,16 +19,16 @@ include("check.php");
 <table cellspacing="10px" class="box-table" class="indextable">
 
     <tr>
-        <td><a href = bugform.php>Bug Report</a><br></td>
+        <td class = "indextd"> <a href = bugform.php>Bug Report</a><br></td>
     </tr>
-    
 
-    <td><a href = buglist.php>Bug List</a><br></label></td>
+
+    <td class = "indextd"><a href = buglist.php>Bug List</a><br></label></td>
     
     </tr>
 
     <tr>
-        <td><a href = comments.php>edo eimaste</a></td>
+        <td class = "indextd"><a href = comments.php>edo eimaste</a></td>
         
     </tr>
 
