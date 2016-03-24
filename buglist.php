@@ -17,7 +17,7 @@ $result=mysqli_query($db,$sql);
 
 //echo '<h3> </h3>'.$_SESSION["userID"];
 echo '<table border="1" style="width:60%">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<th>'.'Bug ID'.
-    '</th>'.'<th>'.'Title'.'</th>'.'<th>'.'Select Bug'.'</th>'.'</table>';
+    '</th>'.'<th>'.'Title'.'</th>'.'</table>';
 
 
 //we scan through each row in the response
@@ -30,7 +30,7 @@ while ($row=mysqli_fetch_assoc($result)){
 
 
     echo '<table border="1" style="width:60%">'.'<col width="100px">'. '<col width="100px">'.'<col width="100px">'.'<tr>'.'<th>
-    <a href="mybugs.php?id='.$bugID.'">'.$bugTitle.'</a>'.'</th>'.'<th>'.$bugID.'</th>'.'<th>' . $bugTitle.'</th>'.'</table>';
+    <a href="mybugs.php?id='.$bugID.'">'.$bugID.'</a>'.'</th>'.'<th>'.$bugTitle.'</th>'.'</table>';
     //echo $bugID;
     //echo $bugTitle;
 
