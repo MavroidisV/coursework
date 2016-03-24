@@ -32,9 +32,10 @@ $bugDesc=$row['description'];
 //echo "<h3 class='h3'>BUG ID:" .$bugID."</h3>";
 echo "<h3 class='h3'>".$bugTitle." </h3>";
 echo "<p>".$bugDesc."</p>";
+echo "<br>";
 
 //!!!!!!!!!show the comments in the main page!!!!!!!!!!
-echo "<h3 class='h3'>Comments of all users </h3>";"<br>";
+echo "<h3 class='h3'>Comments of all users </h3>";
 
 $sql1="select * from comments where bugID=" .$_GET["id"];
 
@@ -76,7 +77,7 @@ if(isset($_POST["submit"])) {
 ?>
 <br><br>
 <form method="post" action=>
-    <p class="p">Comments:</p>
+    <p class="p">Comment now:</p>
     <textarea name="comment" cols="40" rows="5" class="input-text1" ></textarea>
     <p></p>
     <input type="submit" name="submit" value="submit">
