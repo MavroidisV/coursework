@@ -1,4 +1,4 @@
-
+<link rel="stylesheet" type="text/css" href="style.css">
 <?php
 
 //refresh the page every 5 mins*******n
