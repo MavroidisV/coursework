@@ -23,7 +23,7 @@ $bugTitle=$row['title'];
 $bugID=$row['bugID'];
 $bugDesc=$row['description'];
 
-echo $bugID;
+echo "BUG ID:" .$bugID;
 echo "<h2>".$bugTitle." </h2>";
 echo "<p>".$bugDesc."</p>";
 
