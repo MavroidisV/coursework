@@ -34,7 +34,7 @@ include("check.php");
         color: #606;
         background-color: #fff;
         font-size:20px;
-        width: 50px;
+        width: auto;
 
     }
 
