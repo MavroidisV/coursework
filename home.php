@@ -6,18 +6,44 @@ include("check.php");
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Welcome</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <style>h1 {text-align: center} </style>
 </head>
 
 <body>
-<h1 class="hello">Hello, <em><?php echo $login_user;?>!</em></h1>
 
-<a href = bugform.php>Bug Report</a><br>
-<a href = buglist.php>Bug List</a><br>
-<a href = comments.php>edo eimaste</a><br>
-<br><br><br>
-<a href="logout.php" style="font-size:18px">Logout?</a>
+<h1>Hello, <em><?php echo $login_user;?>!</em></h1>
+
+
+<table cellspacing="10px" class="box-table">
+
+    <tr>
+        <td><a href = bugform.php>Bug Report</a><br></td>
+    </tr>
+
+    <tr>
+        <td><label for="lastname">Last name:</label></td>
+        
+    </tr>
+
+    <td><a href = buglist.php>Bug List</a><br></label></td>
+    
+    </tr>
+
+    <tr>
+        <td><a href = comments.php>edo eimaste</a></td>
+        
+    </tr>
+
+    <tr>
+        <td><a href="logout.php" style="font-size:18px">Logout?</a></td>
+
+    </tr>
+    
+</table>
+
+
 </body>
 </html>
  
