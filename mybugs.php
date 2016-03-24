@@ -26,29 +26,29 @@ echo "<p>".$bugDesc."</p>";
  
 //for comments look down
 
-
 $id=$_SESSION["userID"];
-$bugID=$_SESSION["bugID"];
 if(isset($_POST["submit"])) {
-
-    $bid=$bugID;
+    
     $comment = $_POST["comment"];
 
     $comment = mysqli_real_escape_string($db, $comment);
     
-    echo $bid;
-    echo $bid;
+    $qry = "INSERT  INTO comments(bugID, userID, descriptionC) VALUES ('$bugID', '$id','$comment')";
 
-    $qry = "INSERT  INTO comments(bugID, userID, descriptionC) VALUES ('$bid', '$id','$comment')";
+    $result1 = mysqli_query($db,$sql) or die(mysqli_error($db));
+    if ($result1) {
+        echo "Thank You! your comment is now submitted.";
+        echo "Please <a href = 'userlogin.php'>Login</a>";
+    }
 
-    if (mysqli_query($db, $qry)) {
+    /*if (mysqli_query($db, $qry)) {
         echo "Records added successfully.";
 
         //redirect user to login screen
         //header("location: index.php");
     } else {
         echo "ERROR: Could not be able to execute" . $qry . mysqli_error($db);
-    }
+    }*/
 
 }
 
