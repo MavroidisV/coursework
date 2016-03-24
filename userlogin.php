@@ -20,12 +20,12 @@ if ((isset($_SESSION['username']) != ''))
 
     <br><br>
     <form method="post" action="loginvalidation.php" class="box-form" autocomplete="on">
-        <label for = "username">Username:</label><br>
-        <input type="text" name="username" placeholder="username" class="input-text"/><br><br>
-        <label for="password">Password:</label><br>
-        <input type="password" name="password" placeholder="password" class="input-text" />  <br><br>
-        <input type="submit" name="submit" value = "login" class="input-text"/>
-        Not already a user? Please register <a href  = "register.html"> here </a>
+        <label for = "username">Username:</label>
+        <input type="text" name="username" placeholder="username" class="input-text"/><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" placeholder="password" class="input-text" />  <br>
+        <input type="submit" name="submit" value = "login" class="input-text"/><br>
+        Not already a user? Please <a href  = "register.html"> register </a>
     </form>
     <div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
 
