@@ -20,7 +20,7 @@ include("regsubmit.php");
     <table cellspacing="10px" class="box-table">
 
         <tr>
-            <td class="input-text1"><label for="firstname">First name:</label></td>
+            <td class="input-text"><label for="firstname">First name:</label></td>
             <td class><input type="text" name="firstname"required></td>
         </tr>
 
