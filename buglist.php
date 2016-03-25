@@ -60,7 +60,7 @@ while ($row=mysqli_fetch_assoc($result)){
 }
 ?>
 <br>
-<a href class=bill = home.php>Go back to Home</a>
+<a href class="bill" = home.php>Go back to Home</a>
 
 </body>
 
