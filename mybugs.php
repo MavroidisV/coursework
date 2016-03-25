@@ -14,6 +14,8 @@ error_reporting(E_ALL);
 session_start();
     include("connection.php");
 
+date_default_timezone_set('UTC');
+$date = date('Y-m-d');
 
 //select everything from our bugs table where the id is right
 $sql="select * from bugs where bugID=" .$_GET["id"];
@@ -45,10 +47,11 @@ $result=mysqli_query($db,$sql1);
 //scan through each row
 while ($row=mysqli_fetch_assoc($result)){
     //get the tile and id from the bug
-    $userID=$row['userID'];
+    $datepost=$row ['postDate'];
+    $userID=$row['username'];
     $comment = $row['descriptionC'];
     //write the link to the page
-    echo "<h4 class='h4'>User ".$userID. " commented</h4>";
+    echo "<h4 class='h4'>".$userID. ".$datepost  commented:</h4>";
     echo $comment;
 }
 
@@ -62,7 +65,7 @@ if(isset($_POST["submit"])) {
 
     $comment = mysqli_real_escape_string($db, $comment);
     
-    $qry = "INSERT  INTO comments(bugID, userID, descriptionC) VALUES ('$bugID', '$id','$comment')";
+    $qry = "INSERT  INTO comments(bugID, userID, descriptionC, postDate) VALUES ('$bugID', '$id','$comment','$date')";
 
     $result2 = mysqli_query($db,$qry) or die(mysqli_error($db));
     if ($result2) {
