@@ -61,7 +61,11 @@ while ($row=mysqli_fetch_assoc($result)){
 ?>
 <br>
 <div class="bill">
-<a href = home.php >Go back to Home</a>
+    <table>
+        <tr>
+            <td><a href = home.php >Go back to Home</a></td>
+        </tr>
+    </table>
 </div>
 </body>
 
