@@ -33,8 +33,8 @@ include("check.php");
 
         <tr>
             
-            <td><input name="userfile" type="file" id="userfile" cols="55" rows="15"  class="input-text1">
-            <td ><input type="hidden" name="MAX_FILE_SIZE" value="2000000"></td>
+            <td align="right"><input name="userfile" type="file" id="userfile" cols="55" rows="15"  class="input-text1">
+            <td align="right"><input type="hidden" name="MAX_FILE_SIZE" value="2000000"></td>
             
         </tr>
 
