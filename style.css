@@ -94,6 +94,7 @@ table { margin-left: auto;
 }
 
 .bill1 {border: 1px solid #D68EB2;
+    margin-right: auto;
     text-align: right;
     color:#606;
     border-top-color: #606;
