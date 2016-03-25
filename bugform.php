@@ -21,21 +21,23 @@ include("check.php");
     <table cellspacing="10px" class="box-table">
 
         <tr>
-            <td><label for="title" class="p">Title</label></td></tr>
+            <td><label for="title" class="p">Title</label></td>
+        </tr>
         <tr>
             <td><input type="text" name="title" class="input-text" required></td>
         </tr>
 
+        
         <tr>
-            <td class="p">Description</td></tr>
+            <td><label for = "description"</td>class="p">Description</td></tr>
         <tr>
             <td><textarea name="description" cols="45" rows="15"  class="input-text1" ></textarea>
             </td>
         </tr>
         
         <tr>
-            <td align="right"><input name="userfile" type="file" id="userfile" class="input-text1">
-            <td align="right"><input type="hidden" name="MAX_FILE_SIZE" value="5000000"></td>
+            <td ><input name="userfile" type="file" id="userfile" class="input-text1">
+            <td ><input type="hidden" name="MAX_FILE_SIZE" value="5000000"></td>
             
             
         </tr>
