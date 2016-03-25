@@ -18,7 +18,7 @@ include("check.php");
 
 
     <h1 class="h1">Bug Form</h1>
-    <table cellspacing="0" class="box-table"  cellpadding="0">
+    <table cellspacing="10px" class="box-table"  cellpadding="0">
 
         <tr>
             <td><label for="title" class="p">Title:</label></td>
@@ -33,7 +33,7 @@ include("check.php");
         
         <tr style="float: right">
             
-            <td><input name="userfile" type="file" id="userfile" cols="55" rows="15"  class="input-text1">
+            <td><input name="userfile" type="file" id="userfile"  class="input-text1">
             
             
         </tr>
