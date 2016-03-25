@@ -13,20 +13,19 @@ include("check.php");
     
 </head>
 <body>
+<h1 class="h1">Bug Form</h1>
 
 <form method="post" action="bugsubmit.php" autocomplete="off" enctype="multipart/form-data" class="box-form">
 
 
-    <h1 class="h1">Bug Form</h1>
-    
 
         
             <label for="title" class="p">Title:</label>
             <input type="text" name="title" class="input-text" required>
-        
 
-        
-            Description:
+
+
+            <label for="description" class="p">Description:</label>
             <textarea name="description" cols="45" rows="15"  class="input-text1" >
             
                 
