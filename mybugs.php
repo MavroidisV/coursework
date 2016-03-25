@@ -15,7 +15,7 @@ session_start();
     include("connection.php");
 
 date_default_timezone_set('UTC');
-$date = date('d-m-Y');
+$date = date('Y-m-d');
 
 //select everything from our bugs table where the id is right
 $sql="select * from bugs where bugID=" .$_GET["id"];
