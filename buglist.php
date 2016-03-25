@@ -59,6 +59,7 @@ while ($row=mysqli_fetch_assoc($result)){
  
 }
 ?>
+<a href class=bill = home.php>Go back to Home</a>
 
 </body>
 
