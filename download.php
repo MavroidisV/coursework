@@ -16,11 +16,11 @@ if(isset($_GET['id']))
     $name=['name'];
     $size=['size'];
     $type=['type'];
-    $content=['attachment'];
+    $content=['content'];
 
     header("Content-length: $size");
     header("Content-type: $type");
-    //header("Content-Disposition: attachment; filename=$name");
+    header("Content-Disposition: attachment; filename=$name");
     echo $content;
     
     exit;

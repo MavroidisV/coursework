@@ -37,7 +37,7 @@ if(isset($_POST["submit"])) {
 
 
 
-    $sql = "INSERT INTO bugs (title,description,userID, postDate, name, size, type, attachment ) VALUES ('$title','$description','$id','$date','$name','$size','$type','$content')";
+    $sql = "INSERT INTO bugs (title,description,userID, postDate, name, size, type, content ) VALUES ('$title','$description','$id','$date','$name','$size','$type','$content')";
     $result = mysqli_query($db,$sql) or die(mysqli_error($db));
     if ($result) {
         echo "Thank You! You have submitted your bug form and you will be redirected to your home page";
