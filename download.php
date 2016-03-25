@@ -12,7 +12,11 @@ if(isset($_GET['id']))
 
 //fetch our result from the database
     $result=mysqli_query($db,$query);
-    list($name, $type, $size, $content) =mysqli_fetch_assoc($result);
+    $row=mysqli_fetch_assoc($result);
+    $name=['name'];
+    $size=['size'];
+    $type=['type'];
+    $content=['attachment'];
 
     header("Content-length: $size");
     header("Content-type: $type");
