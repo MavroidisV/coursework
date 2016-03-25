@@ -1,19 +1,27 @@
-<link rel="stylesheet" type="text/css" href="style.css">
-<?php
 
-//refresh the page every 5 mins*******n
-header('Refresh: 300'); ?>
+<head>
+    <?php
+
+    //refresh the page every 5 mins*******
+    header('Refresh: 300'); ?>
+
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
 
 <body>
 
 <?php
-
+//display error
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+//session
 session_start();
-    include("connection.php");
-
+//connection with database
+include("connection.php");
+//set date
 date_default_timezone_set('UTC');
 $date = date('Y-m-d');
 
@@ -31,7 +39,7 @@ $bugTitle=$row['title'];
 $bugID=$row['bugID'];
 $bugDesc=$row['description'];
 
-//echo "<h3 class='h3'>BUG ID:" .$bugID."</h3>";
+//show bug title and description
 echo "<h3 class='h3a'>".$bugTitle." </h3>";
 echo "<p>".$bugDesc."</p>";
 echo "<br>";
@@ -39,6 +47,7 @@ echo "<br>";
 //!!!!!!!!!show the comments in the main page!!!!!!!!!!
 echo "<h3 class='h3a'>Comments of all users </h3>";
 
+//query database
 $sql1="select * from comments where bugID=" .$_GET["id"];
 
 //fetch our result from the database
@@ -57,7 +66,8 @@ while ($row=mysqli_fetch_assoc($result)){
     $result2=mysqli_query($db,$sql2);
     $row = mysqli_fetch_assoc($result2);
     $username=$row ['username'];
-    //write the link to the page
+    
+    //comment: username and date
     
     echo "<h4 class='h4'>".$username. " $datepost:</h4>";
     echo $comment;
@@ -88,6 +98,7 @@ if(isset($_POST["submit"])) {
 }
 
 ?>
+
 <br><br>
 <form method="post" action=>
     <p class="p">Comment now:</p>

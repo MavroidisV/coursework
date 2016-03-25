@@ -1,6 +1,7 @@
 <?php
 include('loginvalidation.php'); // Include Login Script
 
+//if the session already holds a name redirect to home
 if ((isset($_SESSION['username']) != ''))
 {
     header('Location: home.php');

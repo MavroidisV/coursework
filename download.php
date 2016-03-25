@@ -15,14 +15,8 @@ if(isset($_GET['id']))
         FROM bugs WHERE bugID=" .$_GET["id"];
     
 
-/*fetch our result from the database
-    $result=mysqli_query($db,$query);
-    $row=mysqli_fetch_assoc($result);
-    $name=['name'];
-    $size=['size'];
-    $type=['type'];
-    $content=['content'];
-*/
+//fetch our result from the database
+
     $result = mysqli_query($db,$query) or die('Error, query failed');
     list($name, $type, $size, $content) =                                  mysqli_fetch_array($result);
     

@@ -51,8 +51,6 @@ include("check.php");
 
 <h2 class="h2">Hello <em><?php echo $login_user;?>!</em></h2>
 
-
-
 <header>
     
     <br>
@@ -73,9 +71,6 @@ include("check.php");
     </nav>
 
 </header>
-
-
-
 
 </body>
 </html>
