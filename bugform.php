@@ -29,7 +29,7 @@ include("check.php");
 
         
         <tr>
-            <td><label for = "description"</td>class="p">Description</td></tr>
+            <td><label for = "description" class="p">Description</td></tr>
         <tr>
             <td><textarea name="description" cols="45" rows="15"  class="input-text1" ></textarea>
             </td>
