@@ -13,18 +13,19 @@ if(isset($_GET['id']))
     
     $query = "SELECT name, type, size, content 
         FROM bugs WHERE bugID=" .$_GET["id"];
+    
 
-echo $query;
-
-/*//fetch our result from the database
+//fetch our result from the database
     $result=mysqli_query($db,$query);
     $row=mysqli_fetch_assoc($result);
     $name=['name'];
     $size=['size'];
     $type=['type'];
     $content=['content'];
+    echo $name;
+    echo $size;
 
-    header("Content-length: $size");
+   /* header("Content-length: $size");
     header("Content-type: $type");
     header("Content-Disposition: attachment; filename=$name");
     echo $content;
