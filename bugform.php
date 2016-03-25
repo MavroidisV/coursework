@@ -21,12 +21,12 @@ include("check.php");
     <table cellspacing="10px" class="box-table">
 
         <tr>
-            <td><label for="title" class="p">Title:</label></td><br>
+            <td><label for="title" class="p">Title:</label><br></td>
             <td><input type="text" name="title" class="input-text" required></td>
         </tr>
 
         <tr>
-            <td class="p">Description:</td><br>
+            <td class="p">Description:<br></td>
             <td><textarea name="description" cols="45" rows="15"  class="input-text1" ></textarea>
             </td>
         </tr>
