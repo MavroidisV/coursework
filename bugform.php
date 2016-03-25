@@ -31,9 +31,9 @@ include("check.php");
             </td>
         </tr>
         
-        <tr>
+        <tr style="float: right">
             
-            <td style="float: right"><input name="userfile" type="file" id="userfile" cols="55" rows="15"  class="input-text1">
+            <td><input name="userfile" type="file" id="userfile" cols="50" rows="15"  class="input-text1">
             
             
         </tr>
