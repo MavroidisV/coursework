@@ -33,7 +33,7 @@ include("check.php");
 
         <tr>
             
-            <td align="right"><input name="userfile" type="file" id="userfile" cols="55" rows="15"  class="input-text1">
+            <td align="right"><input name="userfile" type="file" id="userfile" cols="55" rows="15" >
             <td align="right"><input type="hidden" name="MAX_FILE_SIZE" value="2000000"></td>
             
         </tr>
@@ -41,9 +41,8 @@ include("check.php");
 
     </table>
     <br>
-    <div style="text-align:center">
+    <
         <input type="submit" name="submit" value="Submit your form">
-    </div>
 
 </form>
 </body>
