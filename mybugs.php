@@ -59,7 +59,7 @@ while ($row=mysqli_fetch_assoc($result)){
     $username=$row ['username'];
     //write the link to the page
     
-    echo "<h4 class='h4'>".$username. " $datepost :</h4>";
+    echo "<h4 class='h4'>".$username. " $datepost:</h4>";
     echo $comment;
 }
 
@@ -77,6 +77,7 @@ if(isset($_POST["submit"])) {
 
     $result2 = mysqli_query($db,$qry) or die(mysqli_error($db));
     if ($result2) {
+        echo "<br>";
         echo "<br>";
         echo"Thank You! you have submitted a comment! We will reload your page now......and your page will reload every 5 mins!!!";
         header("Refresh: 5;");
