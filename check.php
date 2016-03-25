@@ -14,6 +14,6 @@ $login_user1=$row['userID'];
 
 if(!isset($user_check))
 {
-header("Location: register.php");
+header("Location: login.php");
 }
 ?>
