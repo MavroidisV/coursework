@@ -16,7 +16,6 @@ table { margin-left: auto;
     border-radius: 4px;
     border: 2px #606 solid;
     background-color: #fff;
-    border-collapse: collapse;
 }
 
 .box-form {
