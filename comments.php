@@ -16,7 +16,7 @@
     echo $uid;
 
 
-    include("changeBugStatus.php");
+    
     //Establishing connection with our database
     include ("connect.php");
     //select required dataset from database
@@ -42,7 +42,7 @@
         
 
         echo '<table border="1" style="width:60%">'.'<col width="60">'. '<col width="60">'.'<col width="60">'.'<col width="60">'.'<tr>'.
-            '<a href="changeBugStatus.php?uid=" '.$bugID.'>'.'<tr>'.'<td>'.$bugID.'</td>'.'<td>' . $title.'</td>'.'<td>'.
+            '<a href="bugStatusChange.php?uid=" '.$bugID.'>'.'<tr>'.'<td>'.$bugID.'</td>'.'<td>' . $title.'</td>'.'<td>'.
             $description.'</td>'.'<td>'.
             "<input type='radio' name='commentRadio' value='$bugID'>".
             '</td>'.'</a>'.'<br>'.'</tr>'.'</table>';

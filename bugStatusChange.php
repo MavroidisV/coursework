@@ -6,12 +6,12 @@ session_start();
 
 <head>
     <meta charset="UTF-8">
-    <title>Change Bug Fix Status</title>
+    <title>Fix  Status</title>
 </head>
 
 <body>
 
-<form method="post" action="changeBugStatus.php">
+<form method="post" action="bugStatusChange.php">
     
 <?php
 
@@ -36,7 +36,7 @@ WHILE($row=mysqli_fetch_assoc($result))
    // $username=$row['username'];
 
     echo '<table border="1" style="width:60%">'.'<col width="60">'. '<col width="60">'.'<col width="60">'.'<col width="60">'.'<tr>'.
-        '<a href="changeBugStatus.php?uid="'.$bugid.'>'.'<tr>'.'<td>'.$bugid.'</td>'.'<td>' . $title.'</td>'.'<td>'.
+        '<a href="bugStatusChange.php?uid="'.$bugid.'>'.'<tr>'.'<td>'.$bugid.'</td>'.'<td>' . $title.'</td>'.'<td>'.
         $bugdesc.'</td>'.'<td>'.
         "<input type='checkbox' name='bugid' value = '$bugid'>".
         '</td>'.'</a>'.'<br>'.'</tr>'.'</table>';
