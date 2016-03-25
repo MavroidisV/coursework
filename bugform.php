@@ -21,12 +21,12 @@ include("check.php");
 
         
             <label for="title" class="p">Title:</label>
-            <input type="text" name="title" class="input-text" required>
+            <input type="text" name="title" class="input-text" required><br>
 
 
 
             <label for="description" class="p">Description:</label>
-            <textarea name="description" cols="45" rows="15"  class="input-text1" >
+            <textarea name="description" cols="45" rows="15"  class="input-text1" ><br>
             
                 
             
