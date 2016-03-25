@@ -55,7 +55,7 @@ while ($row=mysqli_fetch_assoc($result)){
 
     $sql2="select username from users where username=" .$userID;
     $result2=mysqli_query($db,$sql2);
-    $row = mysqli_fetch_assoc($result);
+    $row = mysqli_fetch_assoc($result2);
     $username=$row ['username'];
     //write the link to the page
     echo "<h4 class='h4'>".$username. ".$datepost  commented:</h4>";
