@@ -26,7 +26,7 @@ include("check.php");
         </tr>
 
         <tr>
-            <td class="p">Description:</td>
+            <td><label for="description" class="p">Description:</td>
             <td><textarea name="description" cols="45" rows="15"  class="input-text1" ></textarea>
             </td>
         </tr>
