@@ -23,14 +23,14 @@ if(isset($_GET['id']))
     $type=['type'];
     $content=['content'];
     
-   /* header("Content-length: $size");
+    header("Content-length: $size");
     header("Content-type: $type");
     header("Content-Disposition: attachment; filename=$name");
     echo $content;
     
 
-    exit;
-*/
+    
+
 }
 
 ?>
