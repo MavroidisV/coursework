@@ -26,7 +26,7 @@ include("check.php");
         </tr>
 
         <tr>
-            <td>Description:</td>
+            <td class="input-text1">Description:</td>
             <td><textarea name="description" cols="55" rows="15"  class="input-text1" ></textarea>
             </td>
         </tr>
@@ -34,7 +34,7 @@ include("check.php");
         <tr>
             
             <td><input name="userfile" type="file" id="userfile" cols="55" rows="15"  class="input-text1" class="bill1">
-            <td><input type="hidden" name="MAX_FILE_SIZE" value="2000000"></td>
+            <td class="input-text1" class="bill1"><input type="hidden" name="MAX_FILE_SIZE" value="2000000"></td>
             
         </tr>
 
