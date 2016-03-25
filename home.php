@@ -7,7 +7,7 @@ include("check.php");
 <head>
     <meta charset="utf-8">
     <title>Home</title>
-    <link rel="stylesheet" href="../style.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
     <style>h2 {text-align: center} </style>
     <style>a:link {color: #606}</style>
     
@@ -61,10 +61,10 @@ include("check.php");
     <nav>
 
         <ul>
-            <li> <a href  = "../Bugs/bugform.php">Bug Report</a></li><br><br>
-            <li> <a href = "../Bugs/buglist.php">Bug List</a></li><br><br><br><br>
+            <li> <a href  = "bugform.php">Bug Report</a></li><br><br>
+            <li> <a href = "buglist.php">Bug List</a></li><br><br><br><br>
 
-            <li><a href = "../logout.php">Log out</a></li>
+            <li><a href = "logout.php">Log out</a></li>
 
         </ul>
         

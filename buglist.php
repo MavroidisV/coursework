@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Register</title>
-    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <style type="text/css">
     nav ul li a {
         color: #606;
@@ -48,7 +48,7 @@ while ($row=mysqli_fetch_assoc($result)){
 
 
     echo '<table border="1" style="width:60%" class="box-table" class="input-text">'.'<col width="100px">'.'<col width="100px">'.'<col width="100px">'.'<col width="100px">'.'<col width="100px">'.'<col width="100px">'.'<tr>'. '<th>
-    <a href="../mybugs.php?id=' .$bugID.'">'.$bugID.'</a>'.'</th>'.'<th>'.$bugTitle.'</th>'.'<th>'.$postDate.'</th>'. '<th><a href="../download.php?id=' .$bugID.'">'.$nameupload.'</a>'.'</th></table>';
+    <a href="mybugs.php?id=' .$bugID.'">'.$bugID.'</a>'.'</th>'.'<th>'.$bugTitle.'</th>'.'<th>'.$postDate.'</th>'. '<th><a href="download.php?id=' .$bugID.'">'.$nameupload.'</a>'.'</th></table>';
     //echo $bugID;
     //echo $bugTitle;
  
