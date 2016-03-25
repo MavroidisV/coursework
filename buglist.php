@@ -32,7 +32,7 @@ $result=mysqli_query($db,$sql);
 
 
 //echo '<h3> </h3>'.$_SESSION["userID"];
-echo '<table border="1" style="width:60%" class="box-table" class="input-text">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<th>'.'Bug ID'.
+echo '<table border="1" style="width:60%" class="box-table" class="input-text">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<th>'.'Bug ID'.
     '</th>'.'<th>'.'Title'.'</th>'.'<th>'.'Date Posted'.'</th></table>';
 
 
@@ -44,10 +44,11 @@ while ($row=mysqli_fetch_assoc($result)){
     $bugTitle=$row['title'];
     $bugID=$row['bugID'];
     $postDate=$row['postDate'];
+    $nameupload=$row['name'];
 
 
-    echo '<table border="1" style="width:60%" class="box-table" class="input-text">'.'<col width="100px">'. '<col width="100px">'.'<col width="100px">'.'<col width="100px">'.'<tr>'.'<th>
-    <a href="mybugs.php?id='.$bugID.'">'.$bugID.'</a>'.'</th>'.'<th>'.$bugTitle.'</th>'.'<th>'.$postDate.'</th></table>';
+    echo '<table border="1" style="width:60%" class="box-table" class="input-text">'.'<col width="100px">'.'<col width="100px">'.'<col width="100px">'.'<col width="100px">'.'<col width="100px">'.'<col width="100px">'.'<tr>'.'<th>
+    <a href="mybugs.php?id='.$bugID.'">'.$bugID.'</a>'.'</th>'.'<th>'.$bugTitle.'</th>'.'<th>'.$postDate.'</th>'.'<th>'.$nameupload.'</th></table>';
     //echo $bugID;
     //echo $bugTitle;
 
