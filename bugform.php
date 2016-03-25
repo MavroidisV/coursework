@@ -14,7 +14,7 @@ include("check.php");
 </head>
 <body>
 
-<form method="post" action="bugsubmit.php" autocomplete="off" enctype="multipart/form-data">
+<form method="post" action="bugsubmit.php" autocomplete="off" enctype="multipart/form-data" class="box-form">
 
 
     <h1 class="h1">Bug Form</h1>
