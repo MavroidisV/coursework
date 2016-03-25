@@ -27,11 +27,11 @@ include("check.php");
 
         <tr>
             <td class="p">Description:</td>
-            <td><textarea name="description" cols="45" rows="15"  class="input-text1" ></textarea>
+            <td><input name="description" cols="45" rows="15"  class="input-text1" >
             </td>
         </tr>
         
-        <tr style="float: right">
+        <tr>
             
             <td><input name="userfile" type="file" id="userfile"  class="input-text1">
             
