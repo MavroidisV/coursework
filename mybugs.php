@@ -48,10 +48,16 @@ $result=mysqli_query($db,$sql1);
 while ($row=mysqli_fetch_assoc($result)){
     //get the tile and id from the bug
     $datepost=$row ['postDate'];
-    $userID=$row['username'];
+    $userID=$row['userID'];
     $comment = $row['descriptionC'];
+
+    //sql for username
+
+    $sql2="select username from users where username=" .$userID;
+    $result2=mysqli_query($db,$sql2);
+    $username=$row ['username'];
     //write the link to the page
-    echo "<h4 class='h4'>".$userID. ".$datepost  commented:</h4>";
+    echo "<h4 class='h4'>".$username. ".$datepost  commented:</h4>";
     echo $comment;
 }
 
