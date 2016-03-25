@@ -18,7 +18,7 @@ include("check.php");
 
 
     <h1 class="h1">Bug Form</h1>
-    <table cellspacing="10px" class="box-table"  cellpadding="0">
+    <table cellspacing="10px" class="box-table"  cellpadding="300">
 
         <tr>
             <td><label for="title" class="p">Title:</label></td>
