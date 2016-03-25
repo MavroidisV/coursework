@@ -30,14 +30,14 @@ include("check.php");
             <td><textarea name="description" cols="45" rows="15"  class="input-text1" ></textarea>
             </td>
         </tr>
-        <diva class="bill1">
+        
         <tr>
             
             <td align="right"><input name="userfile" type="file" id="userfile" cols="55" rows="15"  class="input-text1">
-            <td align="right"><input type="hidden" name="MAX_FILE_SIZE" value="2000000"></td>
+            
             
         </tr>
-</diva>
+
 
     </table>
     <br>
