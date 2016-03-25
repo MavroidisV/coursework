@@ -33,7 +33,7 @@ include("check.php");
         
         <tr>
             
-            <td align="right"><input name="userfile" type="file" id="userfile" cols="55" rows="15"  class="input-text1">
+            <td style="text-align: right"><input name="userfile" type="file" id="userfile" cols="55" rows="15"  class="input-text1">
             
             
         </tr>
