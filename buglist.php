@@ -51,7 +51,7 @@ while ($row=mysqli_fetch_assoc($result)){
     <a href="mybugs.php?id='.$bugID.'">'.$bugID.'</a>'.'</th>'.'<th>'.$bugTitle.'</th>'.'<th>'.$postDate.'</th>'.'<th>'.$nameupload.'</th></table>';
     //echo $bugID;
     //echo $bugTitle;
-
+ 
 
     //write the link to the page
     //echo '<a href="mybugs.php?id="'.$bugID.'>'.$bugTitle.'</a>';
