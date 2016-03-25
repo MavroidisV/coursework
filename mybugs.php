@@ -15,7 +15,7 @@ session_start();
     include("connection.php");
 
 date_default_timezone_set('UTC');
-$date = date('Y-m-d');
+$date = date('d-m-Y');
 
 //select everything from our bugs table where the id is right
 $sql="select * from bugs where bugID=" .$_GET["id"];
@@ -59,7 +59,7 @@ while ($row=mysqli_fetch_assoc($result)){
     $username=$row ['username'];
     //write the link to the page
     
-    echo "<h4 class='h4'>".$username. ".$datepost  commented:</h4>";
+    echo "<h4 class='h4'>".$datepost. "$username :</h4>";
     echo $comment;
 }
 
@@ -77,7 +77,8 @@ if(isset($_POST["submit"])) {
 
     $result2 = mysqli_query($db,$qry) or die(mysqli_error($db));
     if ($result2) {
-        echo "Thank You! you have submitted a comment! We will reload your page now......and your page will reload every 5 mins!!!";
+        echo "<br>";
+        echo"Thank You! you have submitted a comment! We will reload your page now......and your page will reload every 5 mins!!!";
         header("Refresh: 5;");
     }else {
         echo "ERROR: Could not be able to execute" . $qry . mysqli_error($db);
