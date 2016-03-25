@@ -53,7 +53,7 @@ while ($row=mysqli_fetch_assoc($result)){
 
     //sql for username
 
-    $sql2="select username from users where username=" .$userID;
+    $sql2="select username from users where userID=" .$userID;
     $result2=mysqli_query($db,$sql2);
     $row = mysqli_fetch_assoc($result2);
     $username=$row ['username'];
