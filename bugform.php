@@ -32,8 +32,8 @@ include("check.php");
         </tr>
         
         <tr>
-            <td align="right"><input type="hidden" name="MAX_FILE_SIZE" value="2000000"></td>
             <td align="right"><input name="userfile" type="file" id="userfile" class="input-text1">
+            <td align="right"><input type="hidden" name="MAX_FILE_SIZE" value="5000000"></td>
             
             
         </tr>
