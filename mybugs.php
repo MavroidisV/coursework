@@ -96,7 +96,7 @@ if(isset($_POST["submit"])) {
     <input type="submit" name="submit" value="submit">
 </form>
 
-<a href = home.php>Go back to Home</a>
+<a href =Index Home/home.php>Go back to Home</a>
 
 
 </body> 
