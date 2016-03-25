@@ -59,7 +59,7 @@ while ($row=mysqli_fetch_assoc($result)){
     $username=$row ['username'];
     //write the link to the page
     
-    echo "<h4 class='h4'>".$datepost. "$username :</h4>";
+    echo "<h4 class='h4'>".$username. " $datepost :</h4>";
     echo $comment;
 }
 
