@@ -33,7 +33,7 @@ $result=mysqli_query($db,$sql);
 
 //echo '<h3> </h3>'.$_SESSION["userID"];
 echo '<table border="1" style="width:60%" class="box-table" class="input-text">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<col width="60">'.'<th>'.'Bug ID'.
-    '</th>'.'<th>'.'Title'.'</th>'.'<th>'.'Date Posted'.'</th></table>';
+    '</th>'.'<th>'.'Title'.'</th>'.'<th>'.'Date Posted'.'<th>'.'File Uploaded'.'</th></table>';
 
 
 //we scan through each row in the response
