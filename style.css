@@ -6,7 +6,9 @@
 .h4 {color: #606}
 .h3a {color: #606;text-decoration: underline}
 
-.img {text-align: center;}
+.img {text-align: center;
+    width: 500px;
+    height: 100px;}
 
 table { margin-left: auto;
     margin-right: auto;
