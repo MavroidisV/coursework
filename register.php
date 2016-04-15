@@ -51,7 +51,7 @@ include("regsubmit.php");
     </table>
     <br>
     
-        <input type="submit" name="submit" value="Create your account">
+        <input type="submit" class="bill" name="submit" value="Create your account">
     
 
 </form>
