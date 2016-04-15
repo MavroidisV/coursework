@@ -50,9 +50,9 @@ include("regsubmit.php");
 
     </table>
     <br>
-    
+    <div style="text-align:center">
         <input type="submit"  name="submit" value="Create your account">
-
+</div>
 </form>
 </body>
 </html>

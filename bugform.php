@@ -45,8 +45,9 @@ include("check.php");
 
     </table>
     <br>
+    <div style="text-align:center">
         <input type="submit" name="submit" value="Submit your form">
-  
+    </div>
 
 </form>
 </body>
