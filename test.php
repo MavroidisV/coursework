@@ -1,9 +1,4 @@
-<?php
 
-include("connection.php");
-include("stolen.php");
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
