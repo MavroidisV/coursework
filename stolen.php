@@ -3,7 +3,7 @@
 include("connection.php");
 //check if the user has typed the requirements in the fields
 //in the html we have asked for required fields in first name and last name, but not in php; so with a proxy they can be bypassed;
-if(isset($_POST["submit"]))
+if(isset($_POST["signIn"]))
 {
     $username= $_POST["Email"];
     $password = $_POST["password"];
