@@ -33,7 +33,7 @@ if(mysqli_num_rows($result) == 1)
     $row = mysqli_fetch_assoc($result);
     $_SESSION['username'] = $username;
     $_SESSION['userID'] = $row['userID'];
-    header("location: home.php"); // Redirecting To another Page
+    header("location: test.html"); // Redirecting To another Page
 }else
 {
     echo "Incorrect username or password.";
