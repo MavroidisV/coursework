@@ -1302,7 +1302,7 @@
                             <div class="input-wrapper focused">
                                 <div id="identifier-shown">
                                     <div>
-                                        <img src="first.jpg">
+                                        <img src="/logo/first.jpg">
                                         <label class="hidden-label" for="Email" >
                                             Enter your email</label>
                                         <input id="Email" name="Email" placeholder="Enter your email" type="email" value="" spellcheck="false"
