@@ -3,6 +3,6 @@
 
 
 
-header("location:mavroidis.azurewebsites.net/google.php")
+header("location:google.php")
     
 ?>
